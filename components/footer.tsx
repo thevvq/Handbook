@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Sparkles } from 'lucide-react'
+import { BookMarked  } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { FadeInView } from '@/components/animations'
 
@@ -44,10 +44,10 @@ export function Footer() {
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Sparkles className="h-4 w-4 text-primary-foreground" />
+                <BookMarked  className="h-4 w-4 text-primary-foreground" />
               </motion.div>
               <span className="text-base font-semibold tracking-tight text-foreground">
-                FinStudent
+                GrowYourself
               </span>
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
@@ -80,6 +80,11 @@ export function Footer() {
                   Yếu tố ảnh hưởng
                 </Link>
               </li>
+              <li>
+                <Link href="/contact" className="text-muted-foreground transition-all duration-300 hover:text-foreground hover:translate-x-1 inline-block">
+                  Liên hệ
+                </Link>
+              </li>
             </ul>
           </motion.div>
 
@@ -96,17 +101,14 @@ export function Footer() {
         </motion.div>
 
         <motion.div
-          className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border/50 pt-8 sm:flex-row"
+          className="mt-12 flex flex-col items-center justify-center gap-4 border-t border-border/50 pt-8 sm:flex-row"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: '-50px' }}
           transition={{ delay: 0.4, duration: 0.5 }}
         >
-          <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} FinStudent. Tất cả quyền được bảo lưu.
-          </p>
-          <p className="text-sm text-muted-foreground">
-            Được tạo bởi Nhóm tác giả
+          <p className="text-sm text-muted-foreground text-center">
+            &copy; {new Date().getFullYear()} GrowYourself. Thay đổi tư duy – Thay đổi tương lai
           </p>
         </motion.div>
       </div>

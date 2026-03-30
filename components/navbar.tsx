@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
-import { Menu, X, BookOpen, Sparkles } from 'lucide-react'
+import { Menu, X, BookOpen, BookMarked  } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
@@ -11,6 +11,7 @@ import { cn } from '@/lib/utils'
 const navLinks = [
   { href: '/', label: 'Trang chủ' },
   { href: '/handbook', label: 'Cẩm nang' },
+  { href: '/contact', label: 'Liên hệ' },
 ]
 
 export function Navbar() {
@@ -64,10 +65,10 @@ export function Navbar() {
               whileHover={{ scale: 1.1, rotate: 5 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Sparkles className="h-4 w-4 text-primary-foreground" />
+              <BookMarked  className="h-4 w-4 text-primary-foreground" />
             </motion.div>
             <span className="text-base font-semibold tracking-tight text-foreground">
-              FinStudent
+              GrowYourself
             </span>
           </Link>
         </motion.div>
