@@ -1,7 +1,10 @@
+'use client'
+
 import Link from 'next/link'
-import { ArrowRight, TrendingUp, PiggyBank, Shield, Sparkles } from 'lucide-react'
+import Image from 'next/image'
+import { ArrowRight, Sparkles } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { SlideInView, FadeInView } from '@/components/animations'
+import { motion } from 'framer-motion'
 
 export function HeroSection() {
   return (
@@ -15,38 +18,38 @@ export function HeroSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-16 lg:grid-cols-2 lg:gap-20">
           {/* Left: Text Content */}
-          <SlideInView direction="left" delay={0.1} className="max-w-xl">
-            <FadeInView delay={0.2} className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-3.5 py-1.5 text-sm font-medium text-primary">
+          <div className="max-w-xl">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-3.5 py-1.5 text-sm font-medium text-primary">
               <Sparkles className="h-3.5 w-3.5" />
               Dành cho sinh viên Việt Nam
-            </FadeInView>
+            </div>
 
-            <FadeInView delay={0.3} className="text-4xl font-bold leading-[1.1] text-foreground sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold leading-[1.1] text-foreground sm:text-5xl lg:text-6xl">
               Làm chủ{' '}
               <span className="text-gradient">tài chính</span>{' '}
               ngay từ hôm nay
-            </FadeInView>
+            </h1>
 
-            <FadeInView delay={0.4} className="mt-6 text-lg leading-relaxed text-muted-foreground">
+            <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               {"Cẩm nang hướng dẫn kỹ năng quản lý tài chính cá nhân giúp sinh viên từng bước hình thành tư duy tài chính đúng đắn và chủ động trong cuộc sống."}
-            </FadeInView>
+            </p>
 
-            <FadeInView delay={0.5} className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Button asChild size="lg" className="h-12 gap-2 rounded-xl px-6 text-base shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <Button asChild size="lg" className="h-12 gap-2 rounded-xl px-6 text-base shadow-sm">
                 <Link href="/handbook">
                   Bắt đầu ngay
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="h-12 rounded-xl px-6 text-base transition-all duration-300 hover:shadow-md hover:-translate-y-1">
+              <Button asChild variant="outline" size="lg" className="h-12 rounded-xl px-6 text-base">
                 <Link href="/handbook#bai-tap">
                   Xem bài tập thực hành
                 </Link>
               </Button>
-            </FadeInView>
+            </div>
 
             {/* Stats */}
-            <FadeInView delay={0.6} className="mt-12 flex gap-10">
+            <div className="mt-12 flex gap-10">
               <div>
                 <p className="text-3xl font-bold text-foreground">50/30/20</p>
                 <p className="mt-1 text-sm text-muted-foreground">Quy tắc ngân sách</p>
@@ -61,74 +64,32 @@ export function HeroSection() {
                 <p className="text-3xl font-bold text-foreground">7 ngày</p>
                 <p className="mt-1 text-sm text-muted-foreground">Nhật ký thực hành</p>
               </div>
-            </FadeInView>
-          </SlideInView>
+            </div>
+          </div>
 
           {/* Right: Illustration */}
-          <SlideInView direction="right" delay={0.2} className="relative lg:justify-self-end">
-            <div className="relative mx-auto w-full max-w-md">
+          <motion.div 
+            className="relative lg:justify-self-end flex justify-center"
+            animate={{ y: [0, -20, 0] }}
+            transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+          >
+            <div className="relative w-full max-w-md">
               {/* Decorative background */}
-              <FadeInView delay={0.3} className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-primary/10 via-primary/5 to-transparent blur-2xl" />
+              <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-primary/10 via-primary/5 to-transparent blur-2xl" />
               
-              {/* Main card */}
-              <div className="relative space-y-4">
-                {/* Visual elements */}
-                <div className="grid grid-cols-2 gap-4">
-                  <FadeInView delay={0.4} className="rounded-2xl border border-border/60 bg-card p-5 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1">
-                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
-                      <PiggyBank className="h-5 w-5 text-primary" />
-                    </div>
-                    <p className="text-sm font-medium text-muted-foreground">Tiết kiệm</p>
-                    <p className="text-2xl font-bold text-foreground">20%</p>
-                  </FadeInView>
-                  <FadeInView delay={0.5} className="rounded-2xl border border-border/60 bg-card p-5 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1">
-                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
-                      <Shield className="h-5 w-5 text-primary" />
-                    </div>
-                    <p className="text-sm font-medium text-muted-foreground">Bảo hiểm</p>
-                    <p className="text-2xl font-bold text-foreground">BHYT</p>
-                  </FadeInView>
-                </div>
-
-                {/* Progress bar visualization */}
-                <FadeInView delay={0.6} className="rounded-2xl border border-border/60 bg-card p-5 shadow-sm">
-                  <div className="mb-4 flex items-center justify-between">
-                    <p className="text-sm font-medium text-foreground">Phân bổ ngân sách</p>
-                    <TrendingUp className="h-4 w-4 text-primary" />
-                  </div>
-                  <div className="space-y-4">
-                    <div>
-                      <div className="mb-2 flex justify-between text-xs">
-                        <span className="font-medium text-muted-foreground">Thiết yếu</span>
-                        <span className="font-semibold text-foreground">50%</span>
-                      </div>
-                      <div className="h-2 overflow-hidden rounded-full bg-muted">
-                        <div className="h-full w-1/2 rounded-full bg-primary transition-all" />
-                      </div>
-                    </div>
-                    <div>
-                      <div className="mb-2 flex justify-between text-xs">
-                        <span className="font-medium text-muted-foreground">Cá nhân</span>
-                        <span className="font-semibold text-foreground">30%</span>
-                      </div>
-                      <div className="h-2 overflow-hidden rounded-full bg-muted">
-                        <div className="h-full w-[30%] rounded-full bg-primary/70 transition-all" />
-                      </div>
-                    </div>
-                    <div>
-                      <div className="mb-2 flex justify-between text-xs">
-                        <span className="font-medium text-muted-foreground">Tiết kiệm</span>
-                        <span className="font-semibold text-foreground">20%</span>
-                      </div>
-                      <div className="h-2 overflow-hidden rounded-full bg-muted">
-                        <div className="h-full w-1/5 rounded-full bg-primary/50 transition-all" />
-                      </div>
-                    </div>
-                  </div>
-                </FadeInView>
+              {/* Image */}
+              <div className="relative">
+                <Image
+                  src="/home.png"
+                  alt="Làm chủ tài chính"
+                  width={700}
+                  height={700}
+                  priority
+                  className="w-full h-auto object-contain"
+                />
               </div>
             </div>
-          </SlideInView>
+          </motion.div>
         </div>
       </div>
     </section>

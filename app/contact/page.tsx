@@ -4,8 +4,8 @@ import { ContactForm } from '@/components/contact-form'
 import { Toaster } from 'sonner'
 
 export const metadata = {
-  title: 'Liên hệ - FinStudent',
-  description: 'Liên hệ với đội ngũ FinStudent để được tư vấn và hỗ trợ về quản lý tài chính cá nhân',
+  title: 'Liên hệ - GrowYourself',
+  description: 'Liên hệ với đội ngũ GrowYourself để được tư vấn và hỗ trợ về quản lý tài chính cá nhân',
 }
 
 export default function ContactPage() {
@@ -50,7 +50,7 @@ export default function ContactPage() {
                   </svg>
                 </div>
                 <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                <p className="text-sm text-muted-foreground">contact@finstudent.com</p>
+                <p className="text-sm text-muted-foreground">25phamdi@gmail.com</p>
               </div>
 
               <div className="p-6 rounded-lg border border-border/30 hover:border-primary/30 transition-colors">
@@ -60,7 +60,7 @@ export default function ContactPage() {
                   </svg>
                 </div>
                 <h3 className="font-semibold text-foreground mb-1">Điện thoại</h3>
-                <p className="text-sm text-muted-foreground">+84 (0) XXX XXX XXX</p>
+                <p className="text-sm text-muted-foreground">+84 (0) 582862520</p>
               </div>
 
               <div className="p-6 rounded-lg border border-border/30 hover:border-primary/30 transition-colors">

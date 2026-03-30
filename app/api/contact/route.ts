@@ -56,7 +56,7 @@ export async function POST(request: NextRequest) {
     await transporter.sendMail({
       from: process.env.SMTP_USER,
       to: process.env.CONTACT_EMAIL || process.env.SMTP_USER,
-      subject: `Liên hệ từ FinStudent: ${body.subject}`,
+      subject: `Liên hệ từ GrowYourself: ${body.subject}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #333; border-bottom: 2px solid #ff6b35; padding-bottom: 10px;">Thông tin liên hệ mới</h2>
@@ -70,7 +70,7 @@ export async function POST(request: NextRequest) {
             ${body.message}
           </p>
           <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
-          <p style="color: #999; font-size: 12px;">Tin nhắn này được gửi từ biểu mẫu liên hệ FinStudent</p>
+          <p style="color: #999; font-size: 12px;">Tin nhắn này được gửi từ biểu mẫu liên hệ GrowYourself</p>
         </div>
       `,
       replyTo: body.email,
@@ -80,13 +80,13 @@ export async function POST(request: NextRequest) {
     await transporter.sendMail({
       from: process.env.SMTP_USER,
       to: body.email,
-      subject: 'Chúng tôi đã nhận được tin nhắn của bạn - FinStudent',
+      subject: 'Chúng tôi đã nhận được tin nhắn của bạn - GrowYourself',
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #333;">Cảm ơn bạn đã liên hệ!</h2>
           <p>Xin chào ${body.fullName},</p>
           <p>Chúng tôi đã nhận được tin nhắn của bạn với tiêu đề: <strong>${body.subject}</strong></p>
-          <p>Đội ngũ của FinStudent sẽ xem xét thông tin của bạn và liên hệ lại trong thời gian sớm nhất có thể.</p>
+          <p>Đội ngũ của GrowYourself sẽ xem xét thông tin của bạn và liên hệ lại trong thời gian sớm nhất có thể.</p>
           <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
           <p style="color: #999; font-size: 12px;">Đây là email tự động. Vui lòng không trả lời email này.</p>
         </div>
