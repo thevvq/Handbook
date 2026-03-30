@@ -1,5 +1,9 @@
+'use client'
+
+import { motion } from 'framer-motion'
 import { Wallet, PiggyBank, Shield } from 'lucide-react'
 import { FeatureCard } from './feature-card'
+import { FadeInView } from './animations'
 
 export function FeaturesSection() {
   const features = [
@@ -31,23 +35,41 @@ export function FeaturesSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mx-auto mb-14 max-w-2xl text-center">
-          <p className="mb-3 text-sm font-medium uppercase tracking-wider text-primary">
+          <FadeInView delay={0.1} className="mb-3 text-sm font-medium uppercase tracking-wider text-primary">
             Nội dung chính
-          </p>
-          <h2 className="text-3xl font-bold text-foreground sm:text-4xl">
+          </FadeInView>
+          <FadeInView delay={0.2} className="text-3xl font-bold text-foreground sm:text-4xl">
             Ba kỹ năng tài chính thiết yếu
-          </h2>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          </FadeInView>
+          <FadeInView delay={0.3} className="mt-4 text-base leading-relaxed text-muted-foreground">
             Mỗi sinh viên cần nắm vững để làm chủ tài chính cá nhân và chuẩn bị cho tương lai.
-          </p>
+          </FadeInView>
         </div>
 
         {/* Feature Cards Grid */}
-        <div className="grid gap-6 md:grid-cols-3">
-          {features.map((feature) => (
-            <FeatureCard key={feature.title} {...feature} />
+        <motion.div
+          className="grid gap-6 md:grid-cols-3"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: '-50px' }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: {
+                staggerChildren: 0.2,
+              },
+            },
+          }}
+        >
+          {features.map((feature, index) => (
+            <FeatureCard 
+              key={feature.title} 
+              {...feature}
+              delay={index * 0.15}
+            />
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   )

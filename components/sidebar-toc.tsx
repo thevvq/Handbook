@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import { cn } from '@/lib/utils'
 import { ChevronDown, ChevronRight, Menu, X, List } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -60,25 +61,36 @@ function TOCItemComponent({ item, activeId, depth = 0, onNavigate }: TOCItemComp
   )
 
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.3 }}
+    >
       <div className={cn('group flex items-center gap-1', depth > 0 && 'ml-3')}>
         {hasChildren && (
-          <button
+          <motion.button
             onClick={() => setIsExpanded(!isExpanded)}
             className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
           >
-            {isExpanded ? (
-              <ChevronDown className="h-3.5 w-3.5" />
-            ) : (
-              <ChevronRight className="h-3.5 w-3.5" />
-            )}
-          </button>
+            <motion.div
+              animate={{ rotate: isExpanded ? 0 : -90 }}
+              transition={{ duration: 0.2 }}
+            >
+              {isExpanded ? (
+                <ChevronDown className="h-3.5 w-3.5" />
+              ) : (
+                <ChevronRight className="h-3.5 w-3.5" />
+              )}
+            </motion.div>
+          </motion.button>
         )}
-        <a
+        <motion.a
           href={`#${item.id}`}
           onClick={onNavigate}
           className={cn(
-            'flex-1 rounded-md px-2.5 py-1.5 text-[13px] leading-snug transition-colors',
+            'flex-1 rounded-md px-2.5 py-1.5 text-[13px] leading-snug transition-all duration-200',
             isActive
               ? 'bg-primary/10 font-medium text-primary'
               : hasActiveChild
@@ -86,25 +98,35 @@ function TOCItemComponent({ item, activeId, depth = 0, onNavigate }: TOCItemComp
                 : 'text-muted-foreground hover:bg-muted hover:text-foreground',
             !hasChildren && 'ml-7'
           )}
+          whileHover={{ x: 4 }}
+          whileTap={{ scale: 0.98 }}
         >
           {item.title}
-        </a>
+        </motion.a>
       </div>
 
-      {hasChildren && isExpanded && (
-        <div className="mt-0.5 space-y-0.5">
-          {item.children!.map((child) => (
-            <TOCItemComponent
-              key={child.id}
-              item={child}
-              activeId={activeId}
-              depth={depth + 1}
-              onNavigate={onNavigate}
-            />
-          ))}
-        </div>
-      )}
-    </div>
+      <AnimatePresence>
+        {hasChildren && isExpanded && (
+          <motion.div
+            className="mt-0.5 space-y-0.5"
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.2 }}
+          >
+            {item.children!.map((child) => (
+              <TOCItemComponent
+                key={child.id}
+                item={child}
+                activeId={activeId}
+                depth={depth + 1}
+                onNavigate={onNavigate}
+              />
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.div>
   )
 }
 
@@ -135,19 +157,30 @@ export function SidebarTOC() {
 
   const sidebarContent = (
     <nav className="space-y-0.5">
-      <div className="mb-4 flex items-center gap-2 px-2.5">
+      <motion.div
+        initial={{ opacity: 0, x: -10 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.3 }}
+        className="mb-4 flex items-center gap-2 px-2.5"
+      >
         <List className="h-4 w-4 text-muted-foreground" />
         <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
           Mục lục
         </span>
-      </div>
-      {tocItems.map((item) => (
-        <TOCItemComponent 
-          key={item.id} 
-          item={item} 
-          activeId={activeId} 
-          onNavigate={() => setIsMobileOpen(false)}
-        />
+      </motion.div>
+      {tocItems.map((item, index) => (
+        <motion.div
+          key={item.id}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: index * 0.05, duration: 0.3 }}
+        >
+          <TOCItemComponent
+            item={item}
+            activeId={activeId}
+            onNavigate={() => setIsMobileOpen(false)}
+          />
+        </motion.div>
       ))}
     </nav>
   )
@@ -156,34 +189,82 @@ export function SidebarTOC() {
     <>
       {/* Mobile TOC Button */}
       <div className="fixed bottom-6 right-6 z-50 lg:hidden">
-        <Button
-          size="icon"
-          className="h-12 w-12 rounded-full shadow-lg"
-          onClick={() => setIsMobileOpen(!isMobileOpen)}
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
         >
-          {isMobileOpen ? <X className="h-5 w-5" /> : <List className="h-5 w-5" />}
-        </Button>
+          <Button
+            size="icon"
+            className="h-12 w-12 rounded-full shadow-lg transition-all duration-300 hover:shadow-xl"
+            onClick={() => setIsMobileOpen(!isMobileOpen)}
+          >
+            <AnimatePresence mode="wait">
+              {isMobileOpen ? (
+                <motion.div
+                  key="close"
+                  initial={{ rotate: -90, opacity: 0 }}
+                  animate={{ rotate: 0, opacity: 1 }}
+                  exit={{ rotate: 90, opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <X className="h-5 w-5" />
+                </motion.div>
+              ) : (
+                <motion.div
+                  key="menu"
+                  initial={{ rotate: 90, opacity: 0 }}
+                  animate={{ rotate: 0, opacity: 1 }}
+                  exit={{ rotate: -90, opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <List className="h-5 w-5" />
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </Button>
+        </motion.div>
       </div>
 
       {/* Mobile TOC Drawer */}
-      {isMobileOpen && (
-        <div className="fixed inset-0 z-40 lg:hidden">
-          <div
-            className="absolute inset-0 bg-background/80 backdrop-blur-sm"
-            onClick={() => setIsMobileOpen(false)}
-          />
-          <div className="absolute bottom-20 right-6 max-h-[65vh] w-80 overflow-y-auto rounded-2xl border border-border/60 bg-card p-4 shadow-xl">
-            {sidebarContent}
-          </div>
-        </div>
-      )}
+      <AnimatePresence>
+        {isMobileOpen && (
+          <>
+            <motion.div
+              className="fixed inset-0 z-40 lg:hidden bg-background/80 backdrop-blur-sm"
+              onClick={() => setIsMobileOpen(false)}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+            />
+            <motion.div
+              className="fixed bottom-20 right-6 z-40 max-h-[65vh] w-80 overflow-y-auto rounded-2xl border border-border/60 bg-card p-4 shadow-xl"
+              initial={{ opacity: 0, scale: 0.8, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.8, y: 20 }}
+              transition={{ duration: 0.2 }}
+            >
+              {sidebarContent}
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
 
       {/* Desktop Sidebar */}
-      <aside className="sticky top-24 hidden h-[calc(100vh-8rem)] w-72 flex-shrink-0 overflow-y-auto pr-4 lg:block">
-        <div className="rounded-2xl border border-border/60 bg-card/50 p-4 backdrop-blur-sm">
+      <motion.aside
+        className="sticky top-24 hidden h-[calc(100vh-8rem)] w-72 flex-shrink-0 overflow-y-auto pr-4 lg:block"
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        <motion.div
+          className="rounded-2xl border border-border/60 bg-card/50 p-4 backdrop-blur-sm"
+          whileHover={{ borderColor: 'var(--color-primary/30)' }}
+          transition={{ duration: 0.3 }}
+        >
           {sidebarContent}
-        </div>
-      </aside>
+        </motion.div>
+      </motion.aside>
     </>
   )
 }

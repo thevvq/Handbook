@@ -1,3 +1,6 @@
+'use client'
+
+import { motion } from 'framer-motion'
 import { cn } from '@/lib/utils'
 import { LucideIcon, Lightbulb, AlertTriangle, Info, MessageSquare } from 'lucide-react'
 
@@ -9,6 +12,7 @@ interface CalloutBoxProps {
   title?: string
   icon?: LucideIcon
   className?: string
+  delay?: number
 }
 
 const variantStyles: Record<CalloutVariant, { bg: string; border: string; icon: LucideIcon; iconColor: string }> = {
@@ -44,23 +48,33 @@ export function CalloutBox({
   title,
   icon: CustomIcon,
   className,
+  delay = 0,
 }: CalloutBoxProps) {
   const styles = variantStyles[variant]
   const Icon = CustomIcon || styles.icon
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 10, scale: 0.98 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      viewport={{ once: true, margin: '-30px' }}
+      transition={{ delay, duration: 0.4, ease: 'easeOut' }}
+      whileHover={{ translateY: -2 }}
       className={cn(
-        'rounded-xl border p-5',
+        'rounded-xl border p-5 transition-all duration-300',
         styles.bg,
         styles.border,
         className
       )}
     >
       <div className="flex gap-3.5">
-        <div className={cn('mt-0.5 flex-shrink-0', styles.iconColor)}>
+        <motion.div
+          className={cn('mt-0.5 flex-shrink-0', styles.iconColor)}
+          whileHover={{ scale: 1.1, rotate: 5 }}
+          transition={{ type: 'spring', stiffness: 300 }}
+        >
           <Icon className="h-[18px] w-[18px]" />
-        </div>
+        </motion.div>
         <div className="space-y-1.5 min-w-0">
           {title && (
             <p className="text-sm font-semibold text-foreground">{title}</p>
@@ -70,6 +84,6 @@ export function CalloutBox({
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
