@@ -24,13 +24,13 @@ export function HeroSection() {
               Dành cho sinh viên Việt Nam
             </div>
 
-            <h1 className="text-4xl font-bold leading-[1.1] text-foreground sm:text-5xl lg:text-6xl">
+            <h1 className="text-3xl font-bold leading-[1.1] text-foreground sm:text-4xl lg:text-5xl">
               Làm chủ{' '}
               <span className="text-gradient">tài chính</span>{' '}
               ngay từ hôm nay
             </h1>
 
-            <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               {"Cẩm nang hướng dẫn kỹ năng quản lý tài chính cá nhân giúp sinh viên từng bước hình thành tư duy tài chính đúng đắn và chủ động trong cuộc sống."}
             </p>
 
@@ -51,17 +51,17 @@ export function HeroSection() {
             {/* Stats */}
             <div className="mt-12 flex gap-10">
               <div>
-                <p className="text-3xl font-bold text-foreground">50/30/20</p>
+                <p className="text-2xl font-bold text-foreground">50/30/20</p>
                 <p className="mt-1 text-sm text-muted-foreground">Quy tắc ngân sách</p>
               </div>
               <div className="h-12 w-px bg-border" />
               <div>
-                <p className="text-3xl font-bold text-foreground">5 bước</p>
+                <p className="text-2xl font-bold text-foreground">5 bước</p>
                 <p className="mt-1 text-sm text-muted-foreground">Quản lý chi tiêu</p>
               </div>
               <div className="h-12 w-px bg-border" />
               <div>
-                <p className="text-3xl font-bold text-foreground">7 ngày</p>
+                <p className="text-2xl font-bold text-foreground">7 ngày</p>
                 <p className="mt-1 text-sm text-muted-foreground">Nhật ký thực hành</p>
               </div>
             </div>
@@ -73,7 +73,7 @@ export function HeroSection() {
             animate={{ y: [0, -20, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
           >
-            <div className="relative w-full max-w-md">
+            <div className="relative w-full max-w-2xl">
               {/* Decorative background */}
               <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-primary/10 via-primary/5 to-transparent blur-2xl" />
               

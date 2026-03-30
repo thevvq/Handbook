@@ -28,7 +28,7 @@ export function Navbar() {
       height: 'auto',
       transition: {
         duration: 0.3,
-        ease: 'easeOut',
+        ease: 'easeOut' as const,
         staggerChildren: 0.1,
       },
     },
@@ -37,7 +37,7 @@ export function Navbar() {
       height: 0,
       transition: {
         duration: 0.2,
-        ease: 'easeIn',
+        ease: 'easeIn' as const,
       },
     },
   }

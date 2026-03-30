@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { BookMarked  } from 'lucide-react'
+import { BookMarked } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { FadeInView } from '@/components/animations'
 
@@ -22,13 +22,25 @@ export function Footer() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5, ease: 'easeOut' },
+      transition: { duration: 0.5, ease: 'easeOut' as const },
     },
   }
 
   return (
-    <footer className="border-t border-border/50 bg-background">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+    <footer
+      className="relative border-t border-border/50 bg-background overflow-hidden"
+      style={{
+        backgroundImage: 'url(/footer-illustration.png)',
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed',
+      }}
+    >
+      {/* Overlay to reduce image opacity */}
+      <div className="absolute inset-0 bg-background/92 -z-10" />
+
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16 relative z-10">
         <motion.div
           className="grid gap-10 lg:grid-cols-4 lg:gap-12"
           initial="hidden"
@@ -44,14 +56,14 @@ export function Footer() {
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <BookMarked  className="h-4 w-4 text-primary-foreground" />
+                <BookMarked className="h-4 w-4 text-primary-foreground" />
               </motion.div>
               <span className="text-base font-semibold tracking-tight text-foreground">
                 GrowYourself
               </span>
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
-              Nền tảng hướng dẫn kỹ năng quản lý tài chính cá nhân dành cho sinh viên Việt Nam. 
+              Nền tảng hướng dẫn kỹ năng quản lý tài chính cá nhân dành cho sinh viên Việt Nam.
               Xây dựng thói quen tài chính lành mạnh từ hôm nay.
             </p>
           </motion.div>
