@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Roboto, Roboto_Mono } from 'next/font/google'
 import './globals.css'
 
-const roboto = Roboto({ 
+const roboto = Roboto({
   weight: ['400', '500', '700'],
   subsets: ['latin', 'vietnamese'],
   variable: '--font-roboto'
@@ -14,9 +14,8 @@ const robotoMono = Roboto_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'FinStudent - Cẩm Nang Quản Lý Tài Chính Sinh Viên',
+  title: 'GrowYourself - Cẩm Nang Quản Lý Tài Chính Sinh Viên',
   description: 'Nền tảng hướng dẫn kỹ năng quản lý tài chính cá nhân cho sinh viên - Làm chủ chi tiêu, tiết kiệm và bảo hiểm',
-  generator: 'v0.app',
   icons: {
     icon: [
       {

@@ -37,11 +37,11 @@ export const slideIn = (direction: 'left' | 'right' | 'up' | 'down', amount: num
   animate: {
     x: 0,
     y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.7,
-      ease: [0.34, 1.56, 0.64, 1]
-    }
+    opacity: 1
+  },
+  transition: {
+    duration: 0.7,
+    ease: [0.34, 1.56, 0.64, 1]
   }
 })
 
@@ -181,7 +181,7 @@ export const skewIn = (direction: 'left' | 'right' = 'left') => ({
     opacity: 1,
     transition: {
       duration: 0.6,
-      ease: [0.34, 1.56, 0.64, 1]
+      ease: [0.34, 1.56, 0.64, 1] as const
     }
   }
 })
@@ -241,7 +241,7 @@ export const SlideInView = ({
       initial={animation.initial}
       whileInView={animation.animate}
       viewport={{ once: true, margin: '-50px' }}
-      transition={{ ...animation.transition, delay }}
+      transition={{ ...(animation.transition || {}), delay } as any}
       className={className}
       {...props}
     >

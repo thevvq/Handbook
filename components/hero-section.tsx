@@ -5,8 +5,36 @@ import Image from 'next/image'
 import { ArrowRight, Sparkles } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { motion } from 'framer-motion'
+import styles from './hero-section.module.css'
+import { useEffect, useRef } from 'react'
+import { animate, splitText, stagger } from 'animejs'
 
 export function HeroSection() {
+  const textRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    if (!textRef.current) return
+
+    const elements = textRef.current.querySelectorAll('h2')
+
+    elements.forEach((el) => {
+      const { chars } = splitText(el, {
+        chars: { wrap: 'clip' },
+      })
+
+      animate(chars, {
+        y: [
+          { to: ['100%', '0%'] },
+          { to: '-100%', delay: 4000, ease: 'in(3)' }
+        ],
+        duration: 900,
+        ease: 'out(3)',
+        delay: stagger(80),
+        loop: true,
+      })
+    })
+  }, [])
+
   return (
     <section className="relative overflow-hidden bg-background pb-24 pt-16 lg:pb-32 lg:pt-20">
       {/* Subtle grid background */}
@@ -24,11 +52,10 @@ export function HeroSection() {
               Dành cho sinh viên Việt Nam
             </div>
 
-            <h1 className="text-3xl font-bold leading-[1.1] text-foreground sm:text-4xl lg:text-5xl">
-              Làm chủ{' '}
-              <span className="text-gradient">tài chính</span>{' '}
-              ngay từ hôm nay
-            </h1>
+            <div ref={textRef} className={styles.textWrapper}>
+              <h2 className={styles.home__content_1}>Am hiểu tài chính</h2>
+              <h2 className={styles.home__content_2}> & Làm chủ tương lai</h2>
+            </div>
 
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               {"Cẩm nang hướng dẫn kỹ năng quản lý tài chính cá nhân giúp sinh viên từng bước hình thành tư duy tài chính đúng đắn và chủ động trong cuộc sống."}
