@@ -27,11 +27,11 @@ export function CTASection() {
             <Button
               asChild
               size="lg"
-              className="mt-8 h-12 gap-2 rounded-xl bg-background px-6 text-base text-foreground shadow-sm hover:bg-background/90"
+              className="btn-wow group mt-8 h-12 gap-2 rounded-xl bg-white px-6 text-base text-slate-900 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:bg-emerald-50 hover:shadow-[0_18px_34px_rgba(148,163,184,0.3)] active:translate-y-0 active:scale-[0.99] focus-visible:ring-2 focus-visible:ring-background/60"
             >
               <Link href="/handbook">
                 Đọc cẩm nang ngay
-                <ArrowRight className="h-4 w-4" />
+                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1.5 group-hover:-translate-y-0.5" />
               </Link>
             </Button>
           </div>

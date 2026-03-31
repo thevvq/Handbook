@@ -62,13 +62,22 @@ export function HeroSection() {
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Button asChild size="lg" className="h-12 gap-2 rounded-xl px-6 text-base shadow-sm">
+              <Button
+                asChild
+                size="lg"
+                className="btn-wow group h-12 gap-2 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 px-6 text-base text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:from-emerald-400 hover:to-teal-400 hover:shadow-[0_16px_32px_rgba(16,185,129,0.35)] active:translate-y-0 active:scale-[0.99] focus-visible:ring-2 focus-visible:ring-primary/40"
+              >
                 <Link href="/handbook">
                   Bắt đầu ngay
-                  <ArrowRight className="h-4 w-4" />
+                  <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1.5 group-hover:-translate-y-0.5" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="h-12 rounded-xl px-6 text-base">
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="group h-12 rounded-xl border-primary/25 px-6 text-base transition-all duration-300 hover:-translate-y-1 hover:scale-[1.01] hover:border-primary/45 hover:bg-primary/5 hover:shadow-[0_12px_26px_rgba(16,185,129,0.14)] active:translate-y-0 active:scale-[0.995] focus-visible:ring-2 focus-visible:ring-primary/30"
+              >
                 <Link href="/handbook#bai-tap">
                   Xem bài tập thực hành
                 </Link>

@@ -177,7 +177,7 @@ export function ContactForm() {
           <Button
             type="submit"
             disabled={isLoading}
-            className="h-10 gap-2 rounded-lg px-6 font-medium shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="btn-wow h-10 gap-2 rounded-lg bg-gradient-to-r from-emerald-500 to-teal-500 px-6 font-medium text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:from-emerald-400 hover:to-teal-400 hover:shadow-[0_16px_34px_rgba(16,185,129,0.35)] active:translate-y-0 active:scale-[0.99] focus-visible:ring-2 focus-visible:ring-primary/40 disabled:cursor-not-allowed disabled:opacity-50"
           >
             {isLoading ? (
               <>
