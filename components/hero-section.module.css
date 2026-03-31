@@ -1,26 +1,35 @@
 .home__content_1,
 .home__content_2 {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 800;
   line-height: 1.1;
   margin: 0;
+  letter-spacing: -0.02em;
 }
 
 /* Chữ trên */
 .home__content_1 {
-  color: oklch(0.52 0.16 155);
-  line-height: 1.05;
+  color: oklch(0.6 0.2 145);
+}
 
-  -webkit-mask-image: linear-gradient(to bottom,
-      black 40%,
-      transparent 100%);
-  mask-image: linear-gradient(to bottom,
-      black 40%,
-      transparent 100%);
+/* Áp style cho từng chữ do anime.js tạo */
+.home__content_1 span {
+  display: inline-block;
+
+  /* để animation mượt */
+  will-change: transform;
+
+  /* hiệu ứng nhẹ */
+  text-shadow: 0 4px 12px rgba(0, 200, 120, 0.15);
 }
 
 /* Chữ dưới */
 .home__content_2 {
-  transform: translateY(-0.8rem);
-  /* kéo lại gần */
+  transform: translateY(-0.5rem);
+  color: #0f172a;
+}
+
+.home__content_2 span {
+  display: inline-block;
+  will-change: transform;
 }

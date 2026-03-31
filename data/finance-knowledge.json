@@ -1,0 +1,27 @@
+[
+  {
+    "id": "budget-503020",
+    "title": "Quy tắc 50/30/20",
+    "content": "Quy tắc 50/30/20 chia thu nhập thành 3 phần: 50% cho nhu cầu thiết yếu như ăn ở, đi lại, học tập; 30% cho nhu cầu cá nhân; 20% cho tiết kiệm và đầu tư. Với sinh viên thu nhập thấp có thể linh hoạt thành 60/20/20 nhưng vẫn nên giữ tỷ lệ tiết kiệm cố định hằng tháng."
+  },
+  {
+    "id": "emergency-fund-basic",
+    "title": "Quỹ dự phòng",
+    "content": "Quỹ dự phòng là khoản tiền dùng cho tình huống khẩn cấp như bệnh, hỏng xe, mất việc làm thêm. Mục tiêu ban đầu nên là 1-3 tháng chi phí sinh hoạt thiết yếu. Ưu tiên để trong tài khoản riêng, dễ rút, hạn chế dùng cho mua sắm không cần thiết."
+  },
+  {
+    "id": "expense-tracking-7days",
+    "title": "Theo dõi chi tiêu",
+    "content": "Ghi chép chi tiêu mỗi ngày giúp phát hiện khoản thất thoát nhỏ nhưng lặp lại. Mỗi dòng nên có ngày, số tiền, nhóm chi tiêu và ghi chú ngắn. Sau 7 ngày, tổng hợp để cắt giảm ít nhất 2 khoản không cần thiết."
+  },
+  {
+    "id": "debt-management-student",
+    "title": "Quản lý nợ sinh viên",
+    "content": "Nếu có nợ, ưu tiên trả khoản lãi suất cao trước để giảm tổng chi phí lãi. Luôn thanh toán đúng hạn để tránh phí phạt và ảnh hưởng lịch sử tín dụng. Không vay khoản mới để đảo nợ cũ nếu chưa có kế hoạch dòng tiền rõ ràng."
+  },
+  {
+    "id": "smart-goals-finance",
+    "title": "Đặt mục tiêu tài chính SMART",
+    "content": "Mục tiêu tài chính nên cụ thể, đo lường được, khả thi, liên quan nhu cầu thực tế và có thời hạn. Ví dụ: tiết kiệm 6 triệu trong 6 tháng bằng cách để dành 1 triệu mỗi tháng. Chia mục tiêu lớn thành mốc nhỏ giúp duy trì động lực."
+  }
+]

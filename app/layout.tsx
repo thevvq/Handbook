@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Roboto, Roboto_Mono } from 'next/font/google'
 import './globals.css'
+import { FinanceChatbot } from '@/components/finance-chatbot'
 
 const roboto = Roboto({
   weight: ['400', '500', '700'],
@@ -44,6 +45,7 @@ export default function RootLayout({
     <html lang="vi" data-scroll-behavior="smooth" className={`${roboto.variable} ${robotoMono.variable}`}>
       <body className="font-sans">
         {children}
+        <FinanceChatbot />
       </body>
     </html>
   )
