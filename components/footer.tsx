@@ -62,7 +62,7 @@ export function Footer() {
                 GrowYourself
               </span>
             </Link>
-            <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
+            <p className="mt-4 max-w-sm text-sm leading-relaxed text-foreground">
               Nền tảng hướng dẫn kỹ năng quản lý tài chính cá nhân dành cho sinh viên Việt Nam.
               Xây dựng thói quen tài chính lành mạnh từ hôm nay.
             </p>
@@ -73,27 +73,27 @@ export function Footer() {
             <h3 className="text-sm font-semibold text-foreground">Điều hướng</h3>
             <ul className="mt-4 space-y-3 text-sm">
               <li>
-                <Link href="/" className="text-muted-foreground transition-all duration-300 hover:text-foreground hover:translate-x-1 inline-block">
+                <Link href="/" className="text-foreground transition-all duration-300 hover:text-foreground hover:translate-x-1 inline-block">
                   Trang chủ
                 </Link>
               </li>
               <li>
-                <Link href="/handbook" className="text-muted-foreground transition-all duration-300 hover:text-foreground hover:translate-x-1 inline-block">
+                <Link href="/handbook" className="text-foreground transition-all duration-300 hover:text-foreground hover:translate-x-1 inline-block">
                   Cẩm nang
                 </Link>
               </li>
               <li>
-                <Link href="/handbook#chuong-1" className="text-muted-foreground transition-all duration-300 hover:text-foreground hover:translate-x-1 inline-block">
+                <Link href="/handbook#chuong-1" className="text-foreground transition-all duration-300 hover:text-foreground hover:translate-x-1 inline-block">
                   Quản lý chi tiêu
                 </Link>
               </li>
               <li>
-                <Link href="/handbook#chuong-2" className="text-muted-foreground transition-all duration-300 hover:text-foreground hover:translate-x-1 inline-block">
+                <Link href="/handbook#chuong-2" className="text-foreground transition-all duration-300 hover:text-foreground hover:translate-x-1 inline-block">
                   Yếu tố ảnh hưởng
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-muted-foreground transition-all duration-300 hover:text-foreground hover:translate-x-1 inline-block">
+                <Link href="/contact" className="text-foreground transition-all duration-300 hover:text-foreground hover:translate-x-1 inline-block">
                   Liên hệ
                 </Link>
               </li>
@@ -103,7 +103,7 @@ export function Footer() {
           {/* Topics */}
           <motion.div variants={itemVariants}>
             <h3 className="text-sm font-semibold text-foreground">Nội dung</h3>
-            <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
+            <ul className="mt-4 space-y-3 text-sm text-foreground">
               <li className="transition-transform duration-300 hover:translate-x-1">Kỹ năng quản lý chi tiêu</li>
               <li className="transition-transform duration-300 hover:translate-x-1">Kỹ năng tiết kiệm</li>
               <li className="transition-transform duration-300 hover:translate-x-1">Quản lý bảo hiểm</li>
@@ -119,7 +119,7 @@ export function Footer() {
           viewport={{ once: true, margin: '-50px' }}
           transition={{ delay: 0.4, duration: 0.5 }}
         >
-          <p className="text-sm text-muted-foreground text-center">
+          <p className="text-sm text-foreground text-center">
             &copy; {new Date().getFullYear()} GrowYourself. Thay đổi tư duy – Thay đổi tương lai
           </p>
         </motion.div>

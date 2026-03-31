@@ -114,11 +114,16 @@ export function FinanceChatbot() {
       <button
         type="button"
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-5 right-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-emerald-500 to-teal-500 text-white shadow-[0_16px_34px_rgba(16,185,129,0.35)] transition-all duration-300 hover:-translate-y-1 hover:scale-105"
+        className="group fixed bottom-5 right-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-emerald-500 to-teal-500 text-white shadow-[0_16px_34px_rgba(16,185,129,0.38)] transition-all duration-300 hover:-translate-y-1 hover:scale-105"
         aria-label="Open finance chat"
       >
-        <MessageCirclePlus className="h-6 w-6" />
-        <span className="absolute -right-0.5 -top-0.5 h-3.5 w-3.5 rounded-full border-2 border-white bg-emerald-300" />
+        <span className="chat-attention-ring pointer-events-none absolute inset-0 rounded-full border-2 border-emerald-300/65" />
+        <span
+          className="chat-attention-ring pointer-events-none absolute inset-[-6px] rounded-full border border-emerald-300/45"
+          style={{ animationDelay: '700ms' }}
+        />
+        <MessageCirclePlus className="chat-attention-core chat-attention-wiggle h-6 w-6" />
+        <span className="chat-badge-pulse absolute -right-0.5 -top-0.5 h-3.5 w-3.5 rounded-full border-2 border-white bg-emerald-300" />
       </button>
     )
   }
@@ -163,18 +168,16 @@ export function FinanceChatbot() {
             <div key={`${msg.role}-${index}`} className={`flex ${msg.role === 'assistant' ? 'justify-start' : 'justify-end'}`}>
               <div className={`flex max-w-[88%] items-end gap-2 ${msg.role === 'assistant' ? '' : 'flex-row-reverse'}`}>
                 <div
-                  className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full ${
-                    msg.role === 'assistant' ? 'bg-emerald-100 text-emerald-700' : 'bg-slate-200 text-slate-700'
-                  }`}
+                  className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full ${msg.role === 'assistant' ? 'bg-emerald-100 text-emerald-700' : 'bg-slate-200 text-slate-700'
+                    }`}
                 >
                   {msg.role === 'assistant' ? <Bot className="h-4 w-4" /> : <UserRound className="h-4 w-4" />}
                 </div>
                 <div
-                  className={`rounded-2xl px-3.5 py-2.5 text-[15px] leading-relaxed shadow-sm ${
-                    msg.role === 'assistant'
+                  className={`rounded-2xl px-3.5 py-2.5 text-[15px] leading-relaxed shadow-sm ${msg.role === 'assistant'
                       ? 'rounded-bl-md border border-emerald-100/80 bg-white text-slate-800'
                       : 'rounded-br-md bg-gradient-to-br from-emerald-500 to-teal-500 text-white'
-                  }`}
+                    }`}
                 >
                   {msg.content}
                 </div>

@@ -2,7 +2,8 @@
 .home__content_2 {
   font-size: clamp(2.5rem, 4vw, 3.5rem);
   font-weight: 800;
-  line-height: 1.1;
+  font-family: 'Playfair Display', serif;
+  line-height: 1.2;
   margin: 0;
   letter-spacing: -0.02em;
 }
