@@ -6,7 +6,14 @@ export function CTASection() {
   return (
     <section className="py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-3xl bg-foreground px-6 py-16 sm:px-12 sm:py-20 lg:px-16">
+        <div className="relative overflow-hidden rounded-3xl px-6 py-16 sm:px-12 sm:py-20 lg:px-16">
+          <div className="absolute inset-0">
+            <img
+              src="/hero-bg.png"
+              className="h-full w-full object-cover"
+            />
+          </div>
+          <div className="absolute inset-0 bg-black/60" />
           {/* Subtle gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-primary/5" />
 

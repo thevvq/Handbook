@@ -137,8 +137,8 @@ export function FinanceChatbot() {
             <Sparkles className="h-5 w-5" />
           </div>
           <div>
-            <p className="text-base font-semibold leading-tight">Finance Buddy AI</p>
-            <p className="text-xs text-emerald-50/95">Always online for student finance</p>
+            <p className="text-base font-semibold leading-tight">Trợ lý tài chính</p>
+            <p className="text-xs text-emerald-50/95">Đồng hành cùng bạn 24/7</p>
           </div>
         </div>
 
@@ -175,8 +175,8 @@ export function FinanceChatbot() {
                 </div>
                 <div
                   className={`rounded-2xl px-3.5 py-2.5 text-[15px] leading-relaxed shadow-sm ${msg.role === 'assistant'
-                      ? 'rounded-bl-md border border-emerald-100/80 bg-white text-slate-800'
-                      : 'rounded-br-md bg-gradient-to-br from-emerald-500 to-teal-500 text-white'
+                    ? 'rounded-bl-md border border-emerald-100/80 bg-white text-slate-800'
+                    : 'rounded-br-md bg-gradient-to-br from-emerald-500 to-teal-500 text-white'
                     }`}
                 >
                   {msg.content}
