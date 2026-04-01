@@ -29,7 +29,7 @@ export function LoiGioiThieu() {
         </p>
 
         <p>
-          {"Tuy nhiên, trên thực tế, không ít sinh viên vẫn còn gặp khó khăn trong việc kiểm soát chi tiêu, thiếu thói quen tiết kiệm và chưa nhận thức đầy đủ về vai trò của các công cụ tài chính như bảo hiểm. Điều này dẫn đến tình trạng chi tiêu mất cân đối, thiếu hụt tài chính và dễ rơi vào áp lực khi đối mặt với những rủi ro bất ngờ."}
+          {"Tuy nhiên, trên thực tế, không ít sinh viên vẫn còn gặp khó khăn trong việc kiểm soát chi tiêu, thiếu thói quen tiết kiệm và chưa nhận thức đầy đủ về vai trò của các công cụ tài chính như bảo hiểm. Điều này dẫn đến tình trạng chi tiêu mất cân đối, thiếu hụt tài chính và dễ rơi vào áp lực khi đối mặt với những rủi ro bất ngờ. Chính vì vậy, việc xây dựng một cẩm nang hướng dẫn kĩ năng quản lí tài chính cá nhân dành riêng cho sinh viên là hết sức cần thiết và có ý nghĩa thực tiễn cao."}
         </p>
 
         <div className="grid gap-4 py-4 md:grid-cols-3">
@@ -47,11 +47,7 @@ export function LoiGioiThieu() {
         </div>
 
         <p>
-          {"Cuốn cẩm nang này được biên soạn nhằm cung cấp những kiến thức cơ bản, dễ hiểu và có tính ứng dụng cao về quản lí tài chính cá nhân. Nội dung tập trung vào các kĩ năng thiết yếu như quản lí chi tiêu, xây dựng thói quen tiết kiệm và đặc biệt là kĩ năng quản lí bảo hiểm – một yếu tố quan trọng nhưng thường bị xem nhẹ."}
-        </p>
-
-        <p>
-          {"Thông qua việc kết hợp giữa lí thuyết và các gợi ý thực hành cụ thể, cẩm nang hướng đến việc giúp sinh viên từng bước hình thành tư duy tài chính đúng đắn và chủ động hơn trong việc quản lí nguồn lực của bản thân."}
+          {"Cuốn cẩm nang này được biên soạn nhằm cung cấp những kiến thức cơ bản, dễ hiểu và có tính ứng dụng cao về quản lí tài chính cá nhân. Nội dung tập trung vào các kĩ năng thiết yếu như quản lí chi tiêu, xây dựng thói quen tiết kiệm và đặc biệt là kĩ năng quản lí bảo hiểm – một yếu tố quan trọng nhưng thường bị xem nhẹ. Thông qua việc kết hợp giữa lí thuyết và các gợi ý thực hành cụ thể, cẩm nang hướng đến việc giúp sinh viên từng bước hình thành tư duy tài chính đúng đắn và chủ động hơn trong việc quản lí nguồn lực của bản thân."}
         </p>
 
         <p className="font-medium text-foreground">

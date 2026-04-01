@@ -12,7 +12,7 @@ export function BudgetCalculator() {
   const [result, setResult] = useState<{ needs: number; wants: number; savings: number } | null>(null)
 
   const calculateBudget = () => {
-    const incomeNum = parseFloat(income.replace(/,/g, ''))
+    const incomeNum = parseFloat(income.replace(/[^0-9]/g, ''))
     if (isNaN(incomeNum) || incomeNum <= 0) {
       setResult(null)
       return
