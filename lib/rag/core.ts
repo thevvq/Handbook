@@ -164,7 +164,8 @@ export async function buildRagIndex() {
 
   const allChunks: RagChunk[] = []
   for (const doc of knowledgeItems) {
-    const chunks = chunkText(doc.content)
+    const fullText = `${doc.title}. ${doc.content}`
+    const chunks = chunkText(fullText)
     for (const [index, content] of chunks.entries()) {
       const embedding = await embedText(content, provider)
       allChunks.push({
