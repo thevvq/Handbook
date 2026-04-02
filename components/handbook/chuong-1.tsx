@@ -117,8 +117,8 @@ export function Chuong1() {
 
       {/* Section 2 */}
       <SectionBlock id="vi-sao-sinh-vien-can-hoc" title="2. Vì sao sinh viên cần học cách quản lý tài chính cá nhân?" level={2}>
-        <div className="space-y-6">
-          <p className="text-muted-foreground leading-8">
+        <div className="space-y-6 text-muted-foreground leading-8">
+          <p>
             Nhiều người vẫn thường cho rằng sinh viên vẫn chưa có nguồn thu nhập ổn định thì 
             không cần quản lí tài chính. Nhưng đây là một quan niệm hoàn toàn sai lầm. 
             Việc rèn luyện kĩ năng quản lí tài chính cá nhân ngay từ khi còn ngồi trên ghế 
@@ -145,13 +145,13 @@ export function Chuong1() {
 
       {/* Section 3 */}
       <SectionBlock id="quan-ly-chi-tieu" title="3. Hướng dẫn kỹ năng quản lý chi tiêu" level={2}>
-        <div className="space-y-6">
+        <div className="space-y-6 text-muted-foreground leading-8">
           <Blockquote>
             &quot;Ôi mới đến giữa tháng mà đã cháy túi rồi&quot; - Chắc hẳn đây không còn là những 
             câu cảm thán xa lạ với các bạn sinh viên nữa.
           </Blockquote>
 
-          <p className="text-muted-foreground leading-8">
+          <p>
             Việc lần đầu, tự tay quản lí một khoản tiền hàng tháng, khoản tiền này dù đến từ gia đình chu cấp hay công việc làm thêm, sẽ luôn đi kèm với những cám dỗ trong việc chi tiêu. Cẩm nang này sẽ giúp bạn kiểm soát chi tiêu, tránh việc  &quot;hết tiền giữa tháng&quot;, giảm stress và hình thành thói quen chi tiêu hợp lí.
           </p>
 
@@ -164,9 +164,9 @@ export function Chuong1() {
             </p>
           </CalloutBox>
 
-          <p className="text-muted-foreground leading-8">Vai trò của kỹ năng quản lý chi tiêu trong đời sống sinh viên rất quan trọng. Kỹ năng này giúp tránh tình trạng “cháy túi” cuối tháng, giảm stress học tập và tạo sự tập trung cao hơn vào việc học cũng như phát triển bản thân. Nó xây dựng thói quen trách nhiệm tài chính, chuẩn bị tốt cho cuộc sống độc lập sau tốt nghiệp, đồng thời ngăn ngừa nợ nần từ thẻ tín dụng hay vay online – những vấn đề đang khiến nhiều bạn rơi vào vòng xoáy lãi suất cao.</p>
+          <p>Vai trò của kỹ năng quản lý chi tiêu trong đời sống sinh viên rất quan trọng. Kỹ năng này giúp tránh tình trạng “cháy túi” cuối tháng, giảm stress học tập và tạo sự tập trung cao hơn vào việc học cũng như phát triển bản thân. Nó xây dựng thói quen trách nhiệm tài chính, chuẩn bị tốt cho cuộc sống độc lập sau tốt nghiệp, đồng thời ngăn ngừa nợ nần từ thẻ tín dụng hay vay online – những vấn đề đang khiến nhiều bạn rơi vào vòng xoáy lãi suất cao.</p>
 
-          <p className="text-muted-foreground leading-8">Bắt đầu quản lý chi tiêu có thể khiến bạn – đặc biệt là sinh viên mới – cảm thấy hơi choáng ngợp, nhất là khi phải tự lo từ tiền nhà trọ, ăn uống đến học tập ở thành phố lớn như TP. Hồ Chí Minh. Tuy nhiên, mọi thứ sẽ trở nên dễ dàng và hiệu quả hơn nếu bạn đi theo một lộ trình rõ ràng, từng bước một. Dưới đây là 5 bước quản lý chi tiêu hợp lý dành riêng cho sinh viên mới bắt đầu, giúp bạn kiểm soát tài chính mà vẫn tận hưởng cuộc sống sinh viên.</p>
+          <p>Bắt đầu quản lý chi tiêu có thể khiến bạn – đặc biệt là sinh viên mới – cảm thấy hơi choáng ngợp, nhất là khi phải tự lo từ tiền nhà trọ, ăn uống đến học tập ở thành phố lớn như TP. Hồ Chí Minh. Tuy nhiên, mọi thứ sẽ trở nên dễ dàng và hiệu quả hơn nếu bạn đi theo một lộ trình rõ ràng, từng bước một. Dưới đây là 5 bước quản lý chi tiêu hợp lý dành riêng cho sinh viên mới bắt đầu, giúp bạn kiểm soát tài chính mà vẫn tận hưởng cuộc sống sinh viên.</p>
 
           <h4 className="text-xl font-semibold text-foreground">5 Bước quản lý chi tiêu hợp lý</h4>
           
@@ -187,7 +187,7 @@ export function Chuong1() {
               </Card>
             ))}
           </div>
-          <p className="text-muted-foreground leading-8">Quản lí chi tiêu cá nhân là một quá trình liên tục, đòi hỏi sự kiên trì và ý thức tự giác cao. Việc thực hiện đầy đủ các bước từ theo dõi, phân loại, lập ngân sách, đặt mục tiêu đến điều chỉnh sẽ giúp sinh viên không chỉ kiểm soát tốt tài chính hiện tại mà còn xây dựng nền tảng vững chắc cho tương lai.</p>
+          <p>Quản lí chi tiêu cá nhân là một quá trình liên tục, đòi hỏi sự kiên trì và ý thức tự giác cao. Việc thực hiện đầy đủ các bước từ theo dõi, phân loại, lập ngân sách, đặt mục tiêu đến điều chỉnh sẽ giúp sinh viên không chỉ kiểm soát tốt tài chính hiện tại mà còn xây dựng nền tảng vững chắc cho tương lai.</p>
 
         </div>
       </SectionBlock>
@@ -222,7 +222,7 @@ export function Chuong1() {
             </CardContent>
           </Card>
 
-          <p className="text-muted-foreground leading-8">Việc ghi chép và theo dõi chi tiêu hằng ngày đóng vai trò quan trọng trong quá trình quản lí tiết kiệm. Nhiều sinh viên thường bỏ qua những khoản chi nhỏ như tiền ăn vặt, gửi xe hay mua sắm linh tinh, tuy nhiên khi cộng dồn lại, những khoản chi này có thể chiếm một phần đáng kể trong ngân sách. Do đó, việc ghi chép đầy đủ giúp sinh viên nhận diện được các “lỗ hổng tài chính” và từ đó điều chỉnh hành vi chi tiêu một cách hợp lí hơn.</p>
+          <p>Việc ghi chép và theo dõi chi tiêu hằng ngày đóng vai trò quan trọng trong quá trình quản lí tiết kiệm. Nhiều sinh viên thường bỏ qua những khoản chi nhỏ như tiền ăn vặt, gửi xe hay mua sắm linh tinh, tuy nhiên khi cộng dồn lại, những khoản chi này có thể chiếm một phần đáng kể trong ngân sách. Do đó, việc ghi chép đầy đủ giúp sinh viên nhận diện được các “lỗ hổng tài chính” và từ đó điều chỉnh hành vi chi tiêu một cách hợp lí hơn.</p>
 
           <h4 className="text-xl font-semibold text-foreground">Các phương pháp tiết kiệm phổ biến</h4>
           <ul className="space-y-3">
@@ -234,11 +234,11 @@ export function Chuong1() {
             ))}
           </ul>
 
-          <p className="text-muted-foreground leading-8">Những phương pháp này không chỉ giúp gia tăng số tiền tích lũy mà còn rèn luyện tính kỉ luật trong quản lí tài chính.</p>
+          <p>Những phương pháp này không chỉ giúp gia tăng số tiền tích lũy mà còn rèn luyện tính kỉ luật trong quản lí tài chính.</p>
 
-          <p className="text-muted-foreground leading-8">Tuy nhiên, trong quá trình thực hiện, sinh viên cũng dễ mắc phải một số sai lầm phổ biến như chỉ tiết kiệm khi còn dư tiền, không đặt mục tiêu rõ ràng hoặc rút tiền tiết kiệm cho các nhu cầu không cần thiết. Những sai lầm này làm giảm hiệu quả của việc tiết kiệm và khiến sinh viên khó đạt được mục tiêu tài chính đã đề ra. Vì vậy, việc xây dựng kế hoạch tiết kiệm cụ thể và kiên trì thực hiện là yếu tố quyết định đến sự thành công của quá trình này.</p>
+          <p>Tuy nhiên, trong quá trình thực hiện, sinh viên cũng dễ mắc phải một số sai lầm phổ biến như chỉ tiết kiệm khi còn dư tiền, không đặt mục tiêu rõ ràng hoặc rút tiền tiết kiệm cho các nhu cầu không cần thiết. Những sai lầm này làm giảm hiệu quả của việc tiết kiệm và khiến sinh viên khó đạt được mục tiêu tài chính đã đề ra. Vì vậy, việc xây dựng kế hoạch tiết kiệm cụ thể và kiên trì thực hiện là yếu tố quyết định đến sự thành công của quá trình này.</p>
 
-          <p className="text-muted-foreground leading-8">Kĩ năng quản lí tiết kiệm là một trong những nền tảng quan trọng giúp sinh viên làm chủ tài chính cá nhân. Thông qua việc hiểu đúng về tiết kiệm, áp dụng các nguyên tắc phù hợp và duy trì thói quen tích lũy đều đặn, sinh viên không chỉ cải thiện đời sống hiện tại mà còn chuẩn bị tốt hơn cho tương lai. Đây là kĩ năng cần được rèn luyện liên tục và có ý thức để trở thành một phần không thể thiếu trong hành trang trưởng thành của mỗi người.</p>
+          <p>Kĩ năng quản lí tiết kiệm là một trong những nền tảng quan trọng giúp sinh viên làm chủ tài chính cá nhân. Thông qua việc hiểu đúng về tiết kiệm, áp dụng các nguyên tắc phù hợp và duy trì thói quen tích lũy đều đặn, sinh viên không chỉ cải thiện đời sống hiện tại mà còn chuẩn bị tốt hơn cho tương lai. Đây là kĩ năng cần được rèn luyện liên tục và có ý thức để trở thành một phần không thể thiếu trong hành trang trưởng thành của mỗi người.</p>
 
         </div>
       </SectionBlock>
@@ -262,7 +262,7 @@ export function Chuong1() {
             </p>
           </CalloutBox>
 
-          <p className="text-muted-foreground leading-8">Trong các loại bảo hiểm hiện nay, bảo hiểm y tế là loại hình thiết yếu mà sinh viên cần ưu tiên tham gia. Đây thường là loại bảo hiểm bắt buộc trong môi trường học đường, giúp chi trả một phần đáng kể chi phí khám chữa bệnh. Bên cạnh đó, sinh viên cũng có thể cân nhắc tham gia bảo hiểm tai nạn hoặc bảo hiểm sức khỏe tự nguyện tùy theo điều kiện tài chính và nhu cầu cá nhân. Việc lựa chọn loại bảo hiểm phù hợp cần dựa trên mức độ rủi ro, khả năng chi trả cũng như môi trường sinh hoạt và học tập của mỗi người.</p>
+          <p>Trong các loại bảo hiểm hiện nay, bảo hiểm y tế là loại hình thiết yếu mà sinh viên cần ưu tiên tham gia. Đây thường là loại bảo hiểm bắt buộc trong môi trường học đường, giúp chi trả một phần đáng kể chi phí khám chữa bệnh. Bên cạnh đó, sinh viên cũng có thể cân nhắc tham gia bảo hiểm tai nạn hoặc bảo hiểm sức khỏe tự nguyện tùy theo điều kiện tài chính và nhu cầu cá nhân. Việc lựa chọn loại bảo hiểm phù hợp cần dựa trên mức độ rủi ro, khả năng chi trả cũng như môi trường sinh hoạt và học tập của mỗi người.</p>
 
           <h4 className="text-xl font-semibold text-foreground">Các nguyên tắc quản lý bảo hiểm</h4>
           
@@ -303,9 +303,9 @@ export function Chuong1() {
             </Card>
           </div>
 
-          <p className="text-muted-foreground leading-8">Tuy nhiên, trên thực tế, nhiều sinh viên vẫn chưa quan tâm đúng mức đến bảo hiểm hoặc có những hiểu lầm phổ biến như cho rằng mình còn trẻ nên ít gặp rủi ro, hoặc chỉ tìm hiểu sơ sài trước khi tham gia. Những nhận thức này có thể dẫn đến việc lựa chọn bảo hiểm không phù hợp hoặc bỏ lỡ những lợi ích quan trọng. Do đó, việc trang bị kiến thức cơ bản về bảo hiểm là điều cần thiết để sinh viên có thể đưa ra quyết định đúng đắn.</p>
+          <p>Tuy nhiên, trên thực tế, nhiều sinh viên vẫn chưa quan tâm đúng mức đến bảo hiểm hoặc có những hiểu lầm phổ biến như cho rằng mình còn trẻ nên ít gặp rủi ro, hoặc chỉ tìm hiểu sơ sài trước khi tham gia. Những nhận thức này có thể dẫn đến việc lựa chọn bảo hiểm không phù hợp hoặc bỏ lỡ những lợi ích quan trọng. Do đó, việc trang bị kiến thức cơ bản về bảo hiểm là điều cần thiết để sinh viên có thể đưa ra quyết định đúng đắn.</p>
 
-          <p className="text-muted-foreground leading-8">Kĩ năng quản lí bảo hiểm là một phần không thể thiếu trong quản lí tài chính cá nhân của sinh viên. Nếu như tiết kiệm giúp tạo dựng nền tảng tài chính, thì bảo hiểm lại giúp bảo vệ nền tảng đó trước những biến cố bất ngờ. Việc kết hợp hài hòa giữa hai kĩ năng này sẽ giúp sinh viên không chỉ sống chủ động hơn trong hiện tại mà còn vững vàng hơn trước những thách thức trong tương lai.</p>
+          <p>Kĩ năng quản lí bảo hiểm là một phần không thể thiếu trong quản lí tài chính cá nhân của sinh viên. Nếu như tiết kiệm giúp tạo dựng nền tảng tài chính, thì bảo hiểm lại giúp bảo vệ nền tảng đó trước những biến cố bất ngờ. Việc kết hợp hài hòa giữa hai kĩ năng này sẽ giúp sinh viên không chỉ sống chủ động hơn trong hiện tại mà còn vững vàng hơn trước những thách thức trong tương lai.</p>
 
         </div>
       </SectionBlock>
@@ -313,8 +313,8 @@ export function Chuong1() {
 
       {/* Section 6 - Sai lầm */}
       <SectionBlock id="sai-lam-can-tranh" title="6. Những sai lầm cần tránh trong quản lý tài chính cá nhân" level={2}>
-        <div className="space-y-6">
-          <p className="text-muted-foreground leading-8">
+        <div className="space-y-6 text-muted-foreground leading-8">
+          <p>
             Trên hành trình làm chủ tài chính, không ít sinh viên đã vô tình rơi vào những 
             &quot;cái bẫy&quot; quen thuộc khiến việc quản lý tiền bạc trở nên khó khăn hơn. 
             Việc nhận diện và tránh xa những cạm bẫy này là điều cần thiết để xây dựng thói quen tài chính lành mạnh và bền vững.

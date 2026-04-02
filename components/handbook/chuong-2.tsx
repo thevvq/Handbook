@@ -150,12 +150,12 @@ export function Chuong2() {
 
       {/* Section I - Nền tảng kiến thức */}
       <SectionBlock id="nen-tang-kien-thuc" title="I. Nền tảng kiến thức về tài chính" level={2}>
-        <div className="space-y-6">
+        <div className="space-y-6 text-muted-foreground leading-8">
           <h4 className="text-xl font-semibold text-foreground">
             1.1. Vai trò của kiến thức tài chính đến quyết định của sinh viên
           </h4>
           
-          <p className="text-muted-foreground leading-8">
+          <p>
             Kiến thức tài chính đóng vai trò là nền tảng cốt lõi và là &quot;kim chỉ nam&quot; giúp 
             sinh viên đưa ra các quyết định tài chính và quản lí tiền bạc một cách hiệu quả, 
             chủ động và trách nhiệm. Vai trò này được thể hiện cụ thể qua các khía cạnh sau:
@@ -179,7 +179,7 @@ export function Chuong2() {
             1.2. Mức độ hiểu biết của sinh viên về các vấn đề tài chính cơ bản
           </h4>
 
-          <p className="text-muted-foreground leading-8">
+          <p>
             Hiện nay, thế hệ sinh viên thời đại mới đang ngày càng quan tâm hơn đến &quot;sức khỏe 
             tài chính&quot; của bản thân. Tuy nhiên, giữa việc &quot;biết&quot; và &quot;làm&quot; vẫn còn một khoảng 
             cách khá lớn. Tuy sinh viên đã có nhận thức nhất định về các khái niệm tài chính cơ bản, nhưng lại chưa thực sự hiểu sâu và vận dụng hiệu quả vào thực tiễn. Điều này dẫn đến tình trạng  thiếu kiểm soát chi tiêu, chưa có kế hoạch tài chính rõ ràng và dễ bị tác động bởi các xu hướng tiêu dùng nhất thời. Mức độ am hiểu về tài chính của phần lớn sinh viên hiện nay vẫn chưa thật sự vững và còn khác nhau giữa mỗi người. Vì vậy, mỗi bạn sẽ có những điểm mạnh riêng trong cách quản lí tiền của mình:
@@ -238,7 +238,7 @@ export function Chuong2() {
             1.3. Ảnh hưởng của hiểu biết tài chính đến việc lựa chọn và sử dụng các nguồn tài chính
           </h4>
 
-          <p className="text-muted-foreground leading-8">
+          <p>
             Trong thế giới tài chính đầy cạm bẫy, &quot;Tấm bản đồ&quot; thông minh mà chúng ta cần chính 
             là kiến thức tài chính. Trước các lựa chọn rủi ro, những kiến thức này đóng vai trò 
             &quot;la bàn định hướng&quot; và là nền tảng cốt lõi chi phối cách thức lựa chọn cũng như sử dụng 
@@ -291,7 +291,7 @@ export function Chuong2() {
             Định hướng sử dụng tài chính cho mục tiêu dài hạn
           </h5>
 
-          <p className="text-muted-foreground leading-8">
+          <p>
             Chúng ta cần có tầm nhìn xa để nắm trong tay những lợi ích tốt nhất cho cuộc sống của 
             bản thân. Đừng đợi đến khi đi làm mới nghĩ đến chuyện tích lũy. Hãy nắm bắt từ việc 
             tiết kiệm và bảo vệ. Hiểu biết tài chính giúp bạn nhìn thấy sức mạnh của Lãi suất kép 
@@ -341,7 +341,7 @@ export function Chuong2() {
             Cải thiện hành vi
           </h5>
 
-          <p className="text-muted-foreground leading-8">
+          <p>
             Khi có kiến thức, thái độ của chúng ta với đồng tiền sẽ thay đổi hoàn toàn. Khi thái độ 
             thay đổi, nó sẽ góp phần vào việc nâng tầm chất lượng sống. Trạng thái của bạn sẽ tốt hơn, 
             không còn những cơn căng thẳng, những nỗi lo âu.
@@ -379,7 +379,7 @@ export function Chuong2() {
             </p>
           </CalloutBox>
 
-          <p className="text-muted-foreground leading-8">
+          <p>
             Bạn có thể bắt đầu bằng việc xây dựng cho mình một thái độ tích cực với tiền bạc từ những 
             điều mình đã biết. Đừng chỉ dừng lại ở việc &quot;hiểu&quot;, mà hãy biến nó thành những thói quen 
             nhỏ mỗi ngày: so sánh giá trước khi mua, thanh toán đúng hạn, tận dụng khuyến mãi một cách 
@@ -391,12 +391,12 @@ export function Chuong2() {
 
       {/* Section II - Hành vi tài chính */}
       <SectionBlock id="hanh-vi-tai-chinh" title="II. Các hành vi tài chính ở sinh viên" level={2}>
-        <div className="space-y-6">
+        <div className="space-y-6 text-muted-foreground leading-8">
           <h4 className="text-xl font-semibold text-foreground">
             2.1. Biểu hiện hành vi tài chính phổ biến
           </h4>
 
-          <p className="text-muted-foreground leading-8">
+          <p>
             Hãy dành một chút thời gian để nhìn lại cách mình đang sử dụng tiền mỗi ngày. Quản lý tài chính 
             không chỉ là xem xét, kiểm tra những con số trên màn hình điện thoại trong các app giao dịch 
             của bạn mỗi ngày và luôn tự hỏi &quot;Sao tháng này tiền của mình đâu hết rồi nhỉ?&quot;. 
@@ -406,7 +406,7 @@ export function Chuong2() {
             nghiên cứu rằng nó có thể tác động đến hạnh phúc của cá nhân.
           </p>
 
-          <p className="text-muted-foreground leading-8">
+          <p>
             Dù quản lý tài chính là một kỹ năng rất quan trọng, nhiều bạn trẻ vẫn đang trong quá trình 
             học cách sử dụng tiền một cách chủ động và có ý thức hơn. Sự tiện lợi của thanh toán số 
             giúp cuộc sống dễ dàng hơn, nhưng cũng khiến việc chi tiêu trở nên nhanh chóng, đôi khi 
@@ -415,7 +415,7 @@ export function Chuong2() {
 
           <h5 className="text-lg font-medium text-foreground">1. Hành vi quản lý tiền hàng ngày</h5>
 
-          <p className="text-muted-foreground leading-8">
+          <p>
             Nhìn lại thói quen của mình, bạn có thể thấy:
           </p>
 
@@ -454,21 +454,21 @@ export function Chuong2() {
 
           <h5 className="text-lg font-medium text-foreground">2. Hành vi tiết kiệm và dự phòng</h5>
 
-          <p className="text-muted-foreground leading-8">
+          <p>
             Có một sự thật khá phổ biến, đó là sinh viên thường chọn &quot;Chi tiêu cho đam mê trước, tiết kiệm 
             phần thừa sau&quot;. Đây là cuộc chiến luôn diễn ra trong trí óc chúng ta giữa &quot;Tận hưởng&quot; và 
             &quot;Tiết kiệm&quot;. Hệ quả nó gây ra là việc tiết kiệm không được thực hiện đều đặn mỗi tháng, nền tảng 
             tài chính không vững chắc. Nếu tháng đó có nhiều cuộc vui chơi, tận hưởng thiếu kiểm soát, khoản tiết kiệm sẽ bằng 0.
           </p>
 
-          <p className="text-muted-foreground leading-8">
+          <p>
             Bạn biết rằng cần có một khoản phòng thân cho lúc ốm đau hay hỏng xe, nhưng việc duy trì nó lại 
             mang tính tùy hứng, không tích lũy được mục tiêu dài hạn.
           </p>
 
           <h5 className="text-lg font-medium text-foreground">3. Hành vi tín dụng và các rủi ro tài chính</h5>
 
-          <p className="text-muted-foreground leading-8">
+          <p>
             Sức mạnh của thẻ tín dụng và các gói &quot;Mua trước trả sau&quot; (BNPL) đang mời gọi sinh viên hơn 
             bao giờ hết. Sinh viên có xu hướng sử dụng thẻ tín dụng để thanh toán, tuy nhiên khả năng quản lí 
             còn hạn chế. Một số sinh viên có biểu hiện trả hết nợ thẻ tín dụng đúng hạn để tăng uy tín cá nhân, 
@@ -506,7 +506,7 @@ export function Chuong2() {
 
           <h5 className="text-lg font-medium text-foreground">4. Sự tác động của nguồn thu nhập đến hành vi</h5>
 
-          <p className="text-muted-foreground leading-8">
+          <p>
             Khảo sát thực tế cho thấy có sự khác biệt khá rõ giữa những bạn chỉ nhận trợ cấp và những bạn 
             tự đi làm thêm hoặc kiếm thu nhập riêng. Khi tự tay tạo ra nguồn thu nhập cho bản thân, mọi 
             người thường sẽ bắt đầu trân trọng giá trị của sức lao động hơn. Vì vậy, trước khi chi tiêu, 
@@ -514,7 +514,7 @@ export function Chuong2() {
             thời?
           </p>
 
-          <p className="text-muted-foreground leading-8">
+          <p>
             Khi bạn tự kiếm và tự quản lý tiền của mình, bạn sẽ tự nhiên suy nghĩ kỹ hơn trước mỗi lần 
             chi tiêu. Lâu dần, điều đó giúp bạn biết cách cân đối tiền bạc hợp lý hơn vừa đủ dùng, vừa 
             hạn chế gặp lại tình trạng &quot;cháy ví&quot; cuối tháng, mà vẫn thấy thoải mái với những gì 
@@ -552,7 +552,7 @@ export function Chuong2() {
             2.2. Ảnh hưởng của hành vi tài chính đến việc quản lý tài chính cá nhân
           </h4>
 
-          <p className="text-muted-foreground leading-8">
+          <p>
             Hành vi tài chính đóng vai trò là yếu tố then chốt chi phối trực tiếp và định hình 
             tình hình tài chính cũng như chất lượng cuộc sống của mỗi cá nhân. Nếu kiến thức là 
             &quot;kim chỉ nam&quot; thì hành vi chính là &quot;la bàn&quot; dẫn bạn đến đích. Bạn có thể biết mọi 
@@ -563,7 +563,7 @@ export function Chuong2() {
 
           <h5 className="text-lg font-medium text-foreground">1. Trách nhiệm và hiệu quả quản lí</h5>
 
-          <p className="text-muted-foreground leading-8">
+          <p>
             Quản lý tài chính là việc bạn tự học cách sống có trách nhiệm với đồng tiền của mình. 
             Nó là một bài kiểm tra về độ tự lập và chủ động của chúng ta. Việc hình thành và duy 
             trì các hành vi tài chính tích cực không chỉ nâng cao hiệu quả quản lí tài chính cá 
@@ -572,7 +572,7 @@ export function Chuong2() {
             bền vững từ đó phát huy những yếu tố cốt lõi cho sự thành công.
           </p>
 
-          <p className="text-muted-foreground leading-8">
+          <p>
             Một vài &quot;tip&quot; các bạn có thể thực hiện:
           </p>
 
@@ -633,7 +633,7 @@ export function Chuong2() {
 
           <h5 className="text-lg font-medium text-foreground">2. Ảnh hưởng từ việc sử dụng công nghệ và công cụ hỗ trợ</h5>
 
-          <p className="text-muted-foreground leading-8">
+          <p>
             Trong thời đại số, hành vi sử dụng các phương thức thanh toán điện tử giúp giao dịch 
             thuận tiện hơn nhưng cũng tiềm ẩn rủi ro chi tiêu thiếu kiểm soát. Lỗ hổng lớn nhất 
             của đa số sinh viên là chúng ta thường &quot;muốn&quot; kiểm soát nhưng lại &quot;ngại&quot; ghi lại. 
@@ -657,7 +657,7 @@ export function Chuong2() {
 
           <h5 className="text-lg font-medium text-foreground">3. Hệ quả của các hành vi tài chính tiêu cực</h5>
 
-          <p className="text-muted-foreground leading-8">
+          <p>
            Những hành vi tài chính tiêu cực nhỏ có thể dẫn đến thảm họa lớn. Các hành vi như trì hoãn thanh toán, chi tiêu theo cảm xúc, không lập kế hoạch hoặc tìm đến các nguồn tài chính không lành mạnh (như tín dụng đen) sẽ dẫn đến những hệ quả tiêu cực nghiêm trọng như nợ nần chồng chất, căng thẳng tài chính và mất khả năng tự chủ cuộc sống.
           </p>
 
@@ -753,7 +753,7 @@ export function Chuong2() {
             2.3. Hướng dẫn kiểm soát và ứng dụng hiệu quả hành vi tài chính
           </h4>
 
-          <p className="text-muted-foreground leading-8">Tổng kết lại, biết thôi là chưa đủ, chúng ta luôn cần một “bộ công cụ” để rèn luyện kỷ luật mỗi ngày. Không chỉ dừng lại ở việc hiểu, điều quan trọng là bạn bắt đầu từ những thói quen nhỏ mỗi ngày để dần làm chủ tài chính của mình.  Hãy áp dụng các bước sau đây để học cách cải thiện hiệu quả tài chính của bạn.</p>
+          <p>Tổng kết lại, biết thôi là chưa đủ, chúng ta luôn cần một “bộ công cụ” để rèn luyện kỷ luật mỗi ngày. Không chỉ dừng lại ở việc hiểu, điều quan trọng là bạn bắt đầu từ những thói quen nhỏ mỗi ngày để dần làm chủ tài chính của mình.  Hãy áp dụng các bước sau đây để học cách cải thiện hiệu quả tài chính của bạn.</p>
 
           <div className="space-y-6">
             {actionSteps.map((actionStep) => (
@@ -794,8 +794,8 @@ export function Chuong2() {
 
       {/* Section III - Gia đình */}
       <SectionBlock id="nen-tang-gia-dinh" title="III. Nền tảng hình thành thói quen tài chính từ gia đình" level={2}>
-        <div className="space-y-6">
-          <p className="text-muted-foreground leading-8">
+        <div className="space-y-6 text-muted-foreground leading-8">
+          <p>
             Bạn có bao giờ tự hỏi tại sao mình lại có thói quen cân nhắc kỹ trước khi mua một món đồ, hay tại sao mình lại cảm thấy bất an khi sắp hết tiền? Thực ra, những thói quen đó phần lớn được hình thành từ nhỏ, thông qua cách bạn lớn lên trong gia đình. Gia đình là nơi đầu tiên bạn tiếp xúc với những vấn đề liên quan đến tiền bạc. Cách cha mẹ chi tiêu, tiết kiệm hay nói chuyện về tiền đã vô tình ảnh hưởng trực tiếp đến cách bạn suy nghĩ và hành động.
           </p>
 
@@ -832,8 +832,8 @@ export function Chuong2() {
 
       {/* - Mức độ ảnh hưởng của gia đình */}
       <SectionBlock id="muc-do-anh-huong-gia-dinh" title="Mức độ ảnh hưởng của gia đình đến sinh viên" level={3}>
-        <div className="space-y-6">
-          <p className="text-muted-foreground leading-8">
+        <div className="space-y-6 text-muted-foreground leading-8">
+          <p>
             Không chỉ là nguồn cung cấp tài chính, gia đình còn là kênh giáo dục hiệu quả nhất 
             giúp nâng cao kỹ năng quản lí tiền bạc của bạn lên đến 40%. Nhiều nghiên cứu xác định 
             gia đình là nhân tố có ảnh hưởng lớn nhất đến hành vi chi tiêu và thói quen tiết kiệm 
@@ -877,7 +877,7 @@ export function Chuong2() {
             Tác động đến kỹ năng quản lí tài chính cá nhân
           </h5>
 
-          <p className="text-muted-foreground leading-8">
+          <p>
             Gia đình ảnh hưởng rõ rệt đến khả năng quản lí tài chính của sinh viên thông qua quá 
             trình quan sát, học hỏi và trao đổi trong cuộc sống hằng ngày. Dù môi trường gia đình 
             có cách quản lí tài chính khác nhau, sinh viên vẫn có thể chủ động tiếp thu và điều 
@@ -921,8 +921,8 @@ export function Chuong2() {
 
       {/* Section IV - Khả năng kiểm soát */}
       <SectionBlock id="kha-nang-kiem-soat" title="IV. Khả năng kiểm soát tài chính cá nhân" level={2}>
-        <div className="space-y-6">
-          <p className="text-muted-foreground leading-8">
+        <div className="space-y-6 text-muted-foreground leading-8">
+          <p>
             Khoảng cách giữa &quot;Biết&quot; và &quot;Làm&quot; sẽ cho bạn biết vì sao nhiều người rất giỏi 
             tính toán nhưng cuối tháng vẫn &quot;rỗng túi&quot;. Để thực sự làm chủ tài chính, bạn cần 
             rèn luyện sự kiểm soát và kỷ luật cá nhân. Đừng để kế hoạch tài chính bị phá vỡ bởi những tác động từ môi trường hay cảm xúc cá nhân. Trên thực tế, nhiều người có thể lập kế hoạch rất chi tiết, nhưng lại thiếu sự kiên định và kỷ luật trong quá trình thực hiện, dẫn đến việc không đạt được mục tiêu đã đề ra. 
@@ -932,7 +932,7 @@ export function Chuong2() {
             4.1. Lập kế hoạch (Áp dụng mô hình SWOT)
           </h4>
 
-          <p className="text-muted-foreground leading-8">
+          <p>
             Để kiểm soát tài chính tốt, trước hết bạn cần một kế hoạch rõ ràng. Lập kế hoạch là yếu tố tác động mạnh mẽ nhất đến thành công tài chính, một kế hoạch hiệu quả không chỉ là những con số, mà còn là sự hiểu bản thân và hoàn cảnh của mình. Mô hình SWOT có thể giúp bạn làm điều đó theo cách đơn giản và dễ áp dụng hơn.
           </p>
 
@@ -952,7 +952,7 @@ export function Chuong2() {
             4.2. Thói quen theo dõi và đánh giá tình hình tài chính cá nhân
           </h4>
 
-          <p className="text-muted-foreground leading-8">
+          <p>
             Nhóm gợi ý cho bạn 2 lựa chọn thường được ưu tiên nhất để theo dõi và đánh giá tài chính:
           </p>
 
@@ -1037,7 +1037,7 @@ export function Chuong2() {
             &quot;Kỷ luật là cầu nối giữa mục tiêu và thành tựu&quot;
           </Blockquote>
 
-          <p className="text-muted-foreground leading-8">
+          <p>
             Kỷ luật không phải là sự gò bó, kỷ luật chính là tự do. Khi bạn có kỷ luật, bạn không còn là nô lệ của cảm xúc mua sắm nhất thời. Kỷ luật không phải là sự gò bó, mà là khả năng tự chủ để ưu tiên mục tiêu dài hạn thay vì những lựa chọn nhất thời. Khi bạn biết nói “không” với những khoản chi không cần thiết và chịu trách nhiệm với từng quyết định của mình, bạn đang từng bước xây dựng thói quen tài chính bền vững. Sự trưởng thành không đến từ việc lập kế hoạch hoàn hảo, mà từ việc kiên trì thực hiện và làm chủ chính hành vi của bản thân. Hãy thôi đổ lỗi cho “hoàn cảnh”. Bắt đầu khi bạn dám tự chịu trách nhiệm 100% cho mỗi hành động của bản thân. Năng lực tự quản lí đòi hỏi chúng ta phải có niềm tin vào khả năng tổ chức của bản thân. Sự trưởng thành về tài chính được minh chứng khi chúng ta thực hiện kỷ luật tài chính một cách tự giác.
           </p>
 

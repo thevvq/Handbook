@@ -2,6 +2,7 @@
 
 import { FormEvent, useEffect, useMemo, useRef, useState } from 'react'
 import { Bot, MessageCirclePlus, Send, Sparkles, Trash2, UserRound, X } from 'lucide-react'
+import ReactMarkdown from 'react-markdown'
 
 type ChatMessage = {
   role: 'user' | 'assistant'
@@ -179,7 +180,22 @@ export function FinanceChatbot() {
                     : 'rounded-br-md bg-gradient-to-br from-emerald-500 to-teal-500 text-white'
                     }`}
                 >
-                  {msg.content}
+                  <ReactMarkdown
+                    components={{
+                      p: ({ node, ...props }) => <p className="mb-1.5 last:mb-0" {...props} />,
+                      ul: ({ node, ...props }) => <ul className="mb-1.5 list-disc pl-4 last:mb-0" {...props} />,
+                      ol: ({ node, ...props }) => <ol className="mb-1.5 list-decimal pl-4 last:mb-0" {...props} />,
+                      li: ({ node, ...props }) => <li className="mb-0.5 last:mb-0" {...props} />,
+                      strong: ({ node, ...props }) => (
+                        <strong
+                          className={msg.role === 'assistant' ? "font-bold text-emerald-600" : "font-semibold text-white"}
+                          {...props}
+                        />
+                      ),
+                    }}
+                  >
+                    {msg.content}
+                  </ReactMarkdown>
                 </div>
               </div>
             </div>

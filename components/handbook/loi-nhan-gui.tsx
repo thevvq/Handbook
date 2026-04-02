@@ -5,7 +5,7 @@ import { Heart } from 'lucide-react'
 export function LoiNhanGui() {
   return (
     <SectionBlock id="loi-nhan-gui" title="Lời nhắn gửi bạn đọc" level={1}>
-      <div className="space-y-6">
+      <div className="space-y-6 text-muted-foreground leading-8">
         <CalloutBox variant="message">
           <div className="space-y-4 text-base">
             <p>

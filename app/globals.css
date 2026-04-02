@@ -134,11 +134,21 @@
   h4,
   h5,
   h6 {
-    @apply tracking-tight text-balance;
+    @apply tracking-normal;
   }
 
   p {
-    @apply leading-relaxed;
+    @apply leading-relaxed text-left;
+  }
+
+  article p,
+  article li,
+  article span {
+    letter-spacing: 0.01em;
+    font-feature-settings: 'kern' 1, 'liga' 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
