@@ -18,7 +18,7 @@ export function CTASection() {
           <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-primary/5" />
 
           <div className="relative mx-auto max-w-2xl text-center">
-            <p className="mb-4 text-sm font-medium uppercase tracking-wider text-primary-foreground/60">
+            <p className="mb-4 text-sm font-medium uppercase tracking-wider text-primary-foreground/60 !text-center">
               Hành động ngay
             </p>
 

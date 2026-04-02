@@ -80,7 +80,7 @@ export function FeaturesSection() {
           viewport={{ once: true, margin: '-80px' }}
           variants={headerVariants}
         >
-          <p className="mb-3 text-sm font-medium uppercase tracking-wider text-primary">
+          <p className="mb-3 text-sm font-medium uppercase tracking-wider text-primary !text-center">
             Nội dung chính
           </p>
           <h2 className="text-3xl font-bold text-foreground sm:text-4xl">
