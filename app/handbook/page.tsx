@@ -10,7 +10,7 @@ import { NhatKyChiTieu } from '@/components/handbook/nhat-ky-chi-tieu'
 import { LoiNhanGui } from '@/components/handbook/loi-nhan-gui'
 
 export const metadata = {
-  title: 'Cẩm nang Quản lý Tài chính Sinh viên | FinStudent',
+  title: 'Cẩm nang Quản lý Tài chính Sinh viên | GrowYourself',
   description: 'Hướng dẫn chi tiết về kĩ năng quản lý tài chính cá nhân dành cho sinh viên Việt Nam',
 }
 
