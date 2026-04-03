@@ -63,7 +63,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-foreground">
-              Nền tảng hướng dẫn kỹ năng quản lý tài chính cá nhân dành cho sinh viên Việt Nam.
+              Nền tảng hướng dẫn kĩ năng quản lý tài chính cá nhân dành cho sinh viên Việt Nam.
               Xây dựng thói quen tài chính lành mạnh từ hôm nay.
             </p>
           </motion.div>
@@ -104,8 +104,8 @@ export function Footer() {
           <motion.div variants={itemVariants}>
             <h3 className="text-sm font-semibold text-foreground">Nội dung</h3>
             <ul className="mt-4 space-y-3 text-sm text-foreground">
-              <li className="transition-transform duration-300 hover:translate-x-1">Kỹ năng quản lý chi tiêu</li>
-              <li className="transition-transform duration-300 hover:translate-x-1">Kỹ năng tiết kiệm</li>
+              <li className="transition-transform duration-300 hover:translate-x-1">Kĩ năng quản lý chi tiêu</li>
+              <li className="transition-transform duration-300 hover:translate-x-1">Kĩ năng tiết kiệm</li>
               <li className="transition-transform duration-300 hover:translate-x-1">Quản lý bảo hiểm</li>
               <li className="transition-transform duration-300 hover:translate-x-1">Bài tập thực hành</li>
             </ul>

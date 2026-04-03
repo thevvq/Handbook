@@ -10,7 +10,7 @@ export function LoiNoiDau() {
           đã trở thành một trong những năng lực thiết yếu đối với mỗi cá nhân, đặc biệt là 
           sinh viên, nhóm đối tượng đang trong giai đoạn chuyển tiếp từ phụ thuộc tài chính 
           vào gia đình sang tự chủ về tài chính. Tuy nhiên, thực tế cho thấy phần lớn sinh viên 
-          hiện nay vẫn chưa được trang bị đầy đủ kiến thức và kỹ năng cần thiết để quản lí 
+          hiện nay vẫn chưa được trang bị đầy đủ kiến thức và kĩ năng cần thiết để quản lí 
           hiệu quả nguồn tài chính của mình.
         </p>
 

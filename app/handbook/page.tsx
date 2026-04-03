@@ -11,7 +11,7 @@ import { LoiNhanGui } from '@/components/handbook/loi-nhan-gui'
 
 export const metadata = {
   title: 'Cẩm nang Quản lý Tài chính Sinh viên | FinStudent',
-  description: 'Hướng dẫn chi tiết về kỹ năng quản lý tài chính cá nhân dành cho sinh viên Việt Nam',
+  description: 'Hướng dẫn chi tiết về kĩ năng quản lý tài chính cá nhân dành cho sinh viên Việt Nam',
 }
 
 export default function HandbookPage() {

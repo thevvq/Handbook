@@ -16,11 +16,11 @@ export function Chuong1() {
     },
     {
       title: 'Hiện thực hóa mong muốn',
-      description: 'Khi biết quản lí tài chính cá nhân hiệu quả còn giúp bản thân hiện thực hóa được những mong muốn như mua một chiếc laptop, tham gia một chuyến du lịch hay đầu tư vào khóa học kỹ năng sẽ khó trở thành hiện thực nếu không có kế hoạch tài chính. Quản lý chi tiêu hiệu quả chính là công cụ giúp sinh viên từng bước biến những mục tiêu đó thành hiện thực.',
+      description: 'Khi biết quản lí tài chính cá nhân hiệu quả còn giúp bản thân hiện thực hóa được những mong muốn như mua một chiếc laptop, tham gia một chuyến du lịch hay đầu tư vào khóa học kĩ năng sẽ khó trở thành hiện thực nếu không có kế hoạch tài chính. Quản lý chi tiêu hiệu quả chính là công cụ giúp sinh viên từng bước biến những mục tiêu đó thành hiện thực.',
     },
     {
       title: 'Xây dựng thói quen tài chính tích cực',
-      description: 'Việc xây dựng thói quen tài chính tích cực từ sớm sẽ ảnh hưởng lâu dài đến cách mỗi người sử dụng tiền bạc. Khi rèn luyện kỹ năng quản lý tài chính từ thời sinh viên, bạn sẽ có lợi thế lớn khi bước vào cuộc sống đi làm, biết cách chi tiêu hợp lý, tiết kiệm và đầu tư một cách thông minh.',
+      description: 'Việc xây dựng thói quen tài chính tích cực từ sớm sẽ ảnh hưởng lâu dài đến cách mỗi người sử dụng tiền bạc. Khi rèn luyện kĩ năng quản lý tài chính từ thời sinh viên, bạn sẽ có lợi thế lớn khi bước vào cuộc sống đi làm, biết cách chi tiêu hợp lý, tiết kiệm và đầu tư một cách thông minh.',
     },
     {
       title: 'Ổn định tinh thần',
@@ -76,7 +76,7 @@ export function Chuong1() {
     {
       icon: AlertTriangle,
       title: 'Lạm dụng thẻ tín dụng và "mua trước, trả sau"',
-      description: 'Việc lạm dụng thẻ tín dụng và các dịch vụ “mua trước, trả sau” cũng là một cạm bẫy nguy hiểm. Sự tiện lợi của các hình thức thanh toán này khiến việc chi tiêu trở nên dễ dàng hơn bao giờ hết, nhưng cũng chính vì vậy mà sinh viên dễ rơi vào tình trạng chi tiêu vượt quá khả năng chi trả. Khi không có kế hoạch tài chính rõ ràng, các khoản nợ có thể nhanh chóng chồng chất và gây áp lực lớn. Vì vậy, việc sử dụng thẻ tín dụng cần được cân nhắc kỹ lưỡng, chỉ nên áp dụng khi thực sự cần thiết và phải đảm bảo có kế hoạch trả nợ cụ thể.',
+      description: 'Việc lạm dụng thẻ tín dụng và các dịch vụ “mua trước, trả sau” cũng là một cạm bẫy nguy hiểm. Sự tiện lợi của các hình thức thanh toán này khiến việc chi tiêu trở nên dễ dàng hơn bao giờ hết, nhưng cũng chính vì vậy mà sinh viên dễ rơi vào tình trạng chi tiêu vượt quá khả năng chi trả. Khi không có kế hoạch tài chính rõ ràng, các khoản nợ có thể nhanh chóng chồng chất và gây áp lực lớn. Vì vậy, việc sử dụng thẻ tín dụng cần được cân nhắc kĩ lưỡng, chỉ nên áp dụng khi thực sự cần thiết và phải đảm bảo có kế hoạch trả nợ cụ thể.',
     },
     {
       icon: AlertTriangle,
@@ -86,7 +86,7 @@ export function Chuong1() {
     {
       icon: AlertTriangle,
       title: 'Dễ dàng từ bỏ khi thất bại',
-      description: 'Tâm lý dễ dàng từ bỏ khi kế hoạch tài chính thất bại cũng là một rào cản lớn. Không ai có thể quản lý tài chính hoàn hảo ngay từ đầu, và việc chi tiêu vượt ngân sách là điều hoàn toàn có thể xảy ra. Thay vì nản lòng, sinh viên cần xem đó là cơ hội để rút kinh nghiệm, phân tích nguyên nhân và điều chỉnh kế hoạch cho phù hợp hơn. Sự kiên trì và tinh thần học hỏi chính là yếu tố quyết định giúp mỗi người từng bước hoàn thiện kỹ năng quản lý tài chính của mình.',
+      description: 'Tâm lý dễ dàng từ bỏ khi kế hoạch tài chính thất bại cũng là một rào cản lớn. Không ai có thể quản lý tài chính hoàn hảo ngay từ đầu, và việc chi tiêu vượt ngân sách là điều hoàn toàn có thể xảy ra. Thay vì nản lòng, sinh viên cần xem đó là cơ hội để rút kinh nghiệm, phân tích nguyên nhân và điều chỉnh kế hoạch cho phù hợp hơn. Sự kiên trì và tinh thần học hỏi chính là yếu tố quyết định giúp mỗi người từng bước hoàn thiện kĩ năng quản lý tài chính của mình.',
     },
   ]
 
@@ -144,7 +144,7 @@ export function Chuong1() {
       </SectionBlock>
 
       {/* Section 3 */}
-      <SectionBlock id="quan-ly-chi-tieu" title="3. Hướng dẫn kỹ năng quản lý chi tiêu" level={2}>
+      <SectionBlock id="quan-ly-chi-tieu" title="3. Hướng dẫn kĩ năng quản lý chi tiêu" level={2}>
         <div className="space-y-6 text-muted-foreground leading-8">
           <Blockquote>
             &quot;Ôi mới đến giữa tháng mà đã cháy túi rồi&quot; - Chắc hẳn đây không còn là những 
@@ -155,16 +155,16 @@ export function Chuong1() {
             Việc lần đầu, tự tay quản lí một khoản tiền hàng tháng, khoản tiền này dù đến từ gia đình chu cấp hay công việc làm thêm, sẽ luôn đi kèm với những cám dỗ trong việc chi tiêu. Cẩm nang này sẽ giúp bạn kiểm soát chi tiêu, tránh việc  &quot;hết tiền giữa tháng&quot;, giảm stress và hình thành thói quen chi tiêu hợp lí.
           </p>
 
-          <CalloutBox variant="default" title="Kỹ năng quản lý chi tiêu là gì?">
+          <CalloutBox variant="default" title="Kĩ năng quản lý chi tiêu là gì?">
             <p>
               Là khả năng lập kế hoạch, theo dõi và kiểm soát các khoản chi ra hàng ngày cũng 
-              như hàng tháng. Kỹ năng này bao gồm việc phân loại chi tiêu thành hai nhóm chính: 
+              như hàng tháng. Kĩ năng này bao gồm việc phân loại chi tiêu thành hai nhóm chính: 
               <strong> cần thiết</strong> (ăn uống, học tập, nhà ở, di chuyển) và <strong>mong muốn</strong> 
               (giải trí, mua sắm theo cảm tính).
             </p>
           </CalloutBox>
 
-          <p>Vai trò của kỹ năng quản lý chi tiêu trong đời sống sinh viên rất quan trọng. Kỹ năng này giúp tránh tình trạng “cháy túi” cuối tháng, giảm stress học tập và tạo sự tập trung cao hơn vào việc học cũng như phát triển bản thân. Nó xây dựng thói quen trách nhiệm tài chính, chuẩn bị tốt cho cuộc sống độc lập sau tốt nghiệp, đồng thời ngăn ngừa nợ nần từ thẻ tín dụng hay vay online – những vấn đề đang khiến nhiều bạn rơi vào vòng xoáy lãi suất cao.</p>
+          <p>Vai trò của kĩ năng quản lý chi tiêu trong đời sống sinh viên rất quan trọng. Kĩ năng này giúp tránh tình trạng “cháy túi” cuối tháng, giảm stress học tập và tạo sự tập trung cao hơn vào việc học cũng như phát triển bản thân. Nó xây dựng thói quen trách nhiệm tài chính, chuẩn bị tốt cho cuộc sống độc lập sau tốt nghiệp, đồng thời ngăn ngừa nợ nần từ thẻ tín dụng hay vay online – những vấn đề đang khiến nhiều bạn rơi vào vòng xoáy lãi suất cao.</p>
 
           <p>Bắt đầu quản lý chi tiêu có thể khiến bạn – đặc biệt là sinh viên mới – cảm thấy hơi choáng ngợp, nhất là khi phải tự lo từ tiền nhà trọ, ăn uống đến học tập ở thành phố lớn như TP. Hồ Chí Minh. Tuy nhiên, mọi thứ sẽ trở nên dễ dàng và hiệu quả hơn nếu bạn đi theo một lộ trình rõ ràng, từng bước một. Dưới đây là 5 bước quản lý chi tiêu hợp lý dành riêng cho sinh viên mới bắt đầu, giúp bạn kiểm soát tài chính mà vẫn tận hưởng cuộc sống sinh viên.</p>
 
@@ -193,7 +193,7 @@ export function Chuong1() {
       </SectionBlock>
 
       {/* Section 4 - Tiết kiệm */}
-      <SectionBlock id="tiet-kiem" title="4. Hướng dẫn kỹ năng quản lý tiết kiệm" level={2}>
+      <SectionBlock id="tiet-kiem" title="4. Hướng dẫn kĩ năng quản lý tiết kiệm" level={2}>
         <div className="space-y-6 text-muted-foreground leading-8">
           <p>
             Trong bối cảnh chi phí sinh hoạt ngày càng gia tăng, kĩ năng quản lí tiết kiệm trở thành một năng lực thiết yếu đối với sinh viên. Đây không chỉ là khả năng cắt giảm các chi tiêu mà còn là quá trình chủ động kiểm soát tài chính cá nhân nhằm tạo ra nguồn tiền tích lũy cho hiện tại và tương lai. Việc hình thành thói quen tiết kiệm từ sớm giúp sinh viên nâng cao tính tự lập, giảm sự phụ thuộc vào gia đình và xây dựng nền tảng tài chính vững chắc cho cuộc sống sau này.
@@ -244,7 +244,7 @@ export function Chuong1() {
       </SectionBlock>
 
       {/* Section 5 - Bảo hiểm */}
-      <SectionBlock id="bao-hiem" title="5. Hướng dẫn kỹ năng quản lý bảo hiểm" level={2}>
+      <SectionBlock id="bao-hiem" title="5. Hướng dẫn kĩ năng quản lý bảo hiểm" level={2}>
         <div className="space-y-6 text-muted-foreground leading-8">
           <p>
             Kĩ năng quản lí bảo hiểm cũng là một trong những kĩ năng giữ vai trò quan trọng 
@@ -280,7 +280,7 @@ export function Chuong1() {
               <CardContent className="pt-6">
                 <h5 className="mb-2 font-semibold text-foreground">Hiểu rõ quyền lợi</h5>
                 <p className="text-sm text-muted-foreground">
-                  Tìm hiểu kỹ về phạm vi chi trả, các trường hợp loại trừ, thời gian hiệu lực 
+                  Tìm hiểu kĩ về phạm vi chi trả, các trường hợp loại trừ, thời gian hiệu lực 
                   và quy trình yêu cầu bồi thường.. Điều này giúp tránh những hiểu lầm không đáng có và đảm bảo quyền lợi khi xảy ra sự cố.
                 </p>
               </CardContent>
@@ -339,7 +339,7 @@ export function Chuong1() {
           <CalloutBox variant="message" title="Lời khuyên">
             <p>
               Hành trình làm chủ tài chính cá nhân không chỉ đòi hỏi kiến thức mà còn cần 
-              sự tỉnh táo để nhận diện và tránh xa những &quot;cái bẫy&quot; phổ biến. Từ việc kiểm soát những khoản chi nhỏ, sử dụng hợp lý các công cụ tài chính, xây dựng quỹ dự phòng, đến việc thiết lập ngân sách phù hợp và duy trì sự kiên trì, tất cả đều góp phần hình thành một nền tảng tài chính vững chắc. Đối với sinh viên, đây không chỉ là kỹ năng cần thiết cho hiện tại mà còn là hành trang quan trọng cho tương lai tự lập và thành công.
+              sự tỉnh táo để nhận diện và tránh xa những &quot;cái bẫy&quot; phổ biến. Từ việc kiểm soát những khoản chi nhỏ, sử dụng hợp lý các công cụ tài chính, xây dựng quỹ dự phòng, đến việc thiết lập ngân sách phù hợp và duy trì sự kiên trì, tất cả đều góp phần hình thành một nền tảng tài chính vững chắc. Đối với sinh viên, đây không chỉ là kĩ năng cần thiết cho hiện tại mà còn là hành trang quan trọng cho tương lai tự lập và thành công.
             </p>
           </CalloutBox>
         </div>

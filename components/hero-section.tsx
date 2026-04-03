@@ -58,7 +58,7 @@ export function HeroSection() {
             </div>
 
             <p className="mt-2 text-base leading-relaxed text-muted-foreground">
-              {"Cẩm nang hướng dẫn kỹ năng quản lý tài chính cá nhân giúp sinh viên từng bước hình thành tư duy tài chính đúng đắn và chủ động trong cuộc sống."}
+              {"Cẩm nang hướng dẫn kĩ năng quản lý tài chính cá nhân giúp sinh viên từng bước hình thành tư duy tài chính đúng đắn và chủ động trong cuộc sống."}
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">

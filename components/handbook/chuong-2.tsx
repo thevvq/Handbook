@@ -41,7 +41,7 @@ export function Chuong2() {
     {
       icon: Heart,
       title: 'Củng cố tâm lý và chất lượng cuộc sống',
-      description: 'Việc nắm vững kỹ năng ra quyết định liên quan đến tiền bạc giúp sinh viên giảm thiểu áp lực tài chính, mang lại sự an tâm và nâng cao chất lượng cuộc sống trong bối cảnh vật giá leo thang. Đối với sinh viên sư phạm, kiến thức này còn giúp họ có đủ năng lực để giáo dục tài chính cho thế hệ học sinh tương lai.',
+      description: 'Việc nắm vững kĩ năng ra quyết định liên quan đến tiền bạc giúp sinh viên giảm thiểu áp lực tài chính, mang lại sự an tâm và nâng cao chất lượng cuộc sống trong bối cảnh vật giá leo thang. Đối với sinh viên sư phạm, kiến thức này còn giúp họ có đủ năng lực để giáo dục tài chính cho thế hệ học sinh tương lai.',
     },
   ]
 
@@ -281,7 +281,7 @@ export function Chuong2() {
                   Việc sử dụng và quản lí nguồn tài chính của bản thân cũng là 1 nghệ thuật cần được thực hiện. Quản lí tiền không phải là điều gì quá phức tạp, mà là cách bạn hiểu và sử dụng những gì mình đang có một cách hợp lý. Khi có kiến thức tài chính, bạn sẽ biết cách chủ động hơn trong việc chi tiêu và không còn rơi vào tình trạng “thiếu trước hụt sau vào cuối tháng”.
                 </p>
                 <p>
-                  Khi hiểu giá trị của đồng tiền mình nhận được (từ gia đình, làm thêm hay học bổng), bạn sẽ tự nhiên trân trọng hơn và suy nghĩ kỹ hơn trước khi chi tiêu. Thay vì tiêu theo cảm xúc. Bạn cần phân bổ nguồn tiền vào từng hạng mục chi tiêu hợp lí, bạn đưa ra các quyết định quản lí ngân quỹ hiệu quả hơn. Đó chính là cách thức để bạn có thể quản lí dòng tiền hiệu quả. Bạn sẽ biết chia tiền cho những khoản cần thiết như học phí, ăn ở, sinh hoạt.
+                  Khi hiểu giá trị của đồng tiền mình nhận được (từ gia đình, làm thêm hay học bổng), bạn sẽ tự nhiên trân trọng hơn và suy nghĩ kĩ hơn trước khi chi tiêu. Thay vì tiêu theo cảm xúc. Bạn cần phân bổ nguồn tiền vào từng hạng mục chi tiêu hợp lí, bạn đưa ra các quyết định quản lí ngân quỹ hiệu quả hơn. Đó chính là cách thức để bạn có thể quản lí dòng tiền hiệu quả. Bạn sẽ biết chia tiền cho những khoản cần thiết như học phí, ăn ở, sinh hoạt.
                 </p>
               </CardContent>
             </Card>
@@ -407,7 +407,7 @@ export function Chuong2() {
           </p>
 
           <p>
-            Dù quản lý tài chính là một kỹ năng rất quan trọng, nhiều bạn trẻ vẫn đang trong quá trình 
+            Dù quản lý tài chính là một kĩ năng rất quan trọng, nhiều bạn trẻ vẫn đang trong quá trình 
             học cách sử dụng tiền một cách chủ động và có ý thức hơn. Sự tiện lợi của thanh toán số 
             giúp cuộc sống dễ dàng hơn, nhưng cũng khiến việc chi tiêu trở nên nhanh chóng, đôi khi 
             thiếu đi sự cân nhắc cần thiết.
@@ -481,7 +481,7 @@ export function Chuong2() {
               <div className="text-sm">
                 <h6 className="font-semibold text-foreground mb-1">Cạm bẫy tài chính</h6>
                 <p className="text-muted-foreground">
-                  Khi áp lực chi tiêu lớn mà kỹ năng kiểm soát yếu, điều này khiến nhiều bạn trở thành 
+                  Khi áp lực chi tiêu lớn mà kĩ năng kiểm soát yếu, điều này khiến nhiều bạn trở thành 
                   &quot;con mồi&quot; của tín dụng đen hoặc dễ sa chân vào các mô hình đa cấp biến tướng 
                   &quot;Việc nhẹ lương cao&quot;.
                 </p>
@@ -515,7 +515,7 @@ export function Chuong2() {
           </p>
 
           <p>
-            Khi bạn tự kiếm và tự quản lý tiền của mình, bạn sẽ tự nhiên suy nghĩ kỹ hơn trước mỗi lần 
+            Khi bạn tự kiếm và tự quản lý tiền của mình, bạn sẽ tự nhiên suy nghĩ kĩ hơn trước mỗi lần 
             chi tiêu. Lâu dần, điều đó giúp bạn biết cách cân đối tiền bạc hợp lý hơn vừa đủ dùng, vừa 
             hạn chế gặp lại tình trạng &quot;cháy ví&quot; cuối tháng, mà vẫn thấy thoải mái với những gì 
             mình đã chọn.
@@ -796,7 +796,7 @@ export function Chuong2() {
       <SectionBlock id="nen-tang-gia-dinh" title="III. Nền tảng hình thành thói quen tài chính từ gia đình" level={2}>
         <div className="space-y-6 text-muted-foreground leading-8">
           <p>
-            Bạn có bao giờ tự hỏi tại sao mình lại có thói quen cân nhắc kỹ trước khi mua một món đồ, hay tại sao mình lại cảm thấy bất an khi sắp hết tiền? Thực ra, những thói quen đó phần lớn được hình thành từ nhỏ, thông qua cách bạn lớn lên trong gia đình. Gia đình là nơi đầu tiên bạn tiếp xúc với những vấn đề liên quan đến tiền bạc. Cách cha mẹ chi tiêu, tiết kiệm hay nói chuyện về tiền đã vô tình ảnh hưởng trực tiếp đến cách bạn suy nghĩ và hành động.
+            Bạn có bao giờ tự hỏi tại sao mình lại có thói quen cân nhắc kĩ trước khi mua một món đồ, hay tại sao mình lại cảm thấy bất an khi sắp hết tiền? Thực ra, những thói quen đó phần lớn được hình thành từ nhỏ, thông qua cách bạn lớn lên trong gia đình. Gia đình là nơi đầu tiên bạn tiếp xúc với những vấn đề liên quan đến tiền bạc. Cách cha mẹ chi tiêu, tiết kiệm hay nói chuyện về tiền đã vô tình ảnh hưởng trực tiếp đến cách bạn suy nghĩ và hành động.
           </p>
 
           <Card className="border-primary/20 bg-primary/5">
@@ -835,7 +835,7 @@ export function Chuong2() {
         <div className="space-y-6 text-muted-foreground leading-8">
           <p>
             Không chỉ là nguồn cung cấp tài chính, gia đình còn là kênh giáo dục hiệu quả nhất 
-            giúp nâng cao kỹ năng quản lí tiền bạc của bạn lên đến 40%. Nhiều nghiên cứu xác định 
+            giúp nâng cao kĩ năng quản lí tiền bạc của bạn lên đến 40%. Nhiều nghiên cứu xác định 
             gia đình là nhân tố có ảnh hưởng lớn nhất đến hành vi chi tiêu và thói quen tiết kiệm 
             của sinh viên. Và chúng ta cũng cần nhìn nhận thẳng thắn rằng môi trường gia đình của 
             mỗi người là khác nhau.
@@ -874,7 +874,7 @@ export function Chuong2() {
           </div>
 
           <h5 className="text-lg font-medium text-foreground">
-            Tác động đến kỹ năng quản lí tài chính cá nhân
+            Tác động đến kĩ năng quản lí tài chính cá nhân
           </h5>
 
           <p>

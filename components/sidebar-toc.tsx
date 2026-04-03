@@ -18,13 +18,13 @@ const tocItems: TOCItem[] = [
   { id: 'loi-gioi-thieu', title: 'Lời giới thiệu', level: 1 },
   {
     id: 'chuong-1',
-    title: 'Chương 1: Kỹ năng quản lý tài chính',
+    title: 'Chương 1: Kĩ năng quản lý tài chính',
     level: 1,
     children: [
       { id: 'quan-ly-tai-chinh-la-gi', title: '1. Quản lý tài chính là gì?', level: 2 },
       { id: 'vi-sao-sinh-vien-can-hoc', title: '2. Vì sao sinh viên cần học?', level: 2 },
-      { id: 'quan-ly-chi-tieu', title: '3. Kỹ năng quản lý chi tiêu', level: 2 },
-      { id: 'tiet-kiem', title: '4. Kỹ năng tiết kiệm', level: 2 },
+      { id: 'quan-ly-chi-tieu', title: '3. Kĩ năng quản lý chi tiêu', level: 2 },
+      { id: 'tiet-kiem', title: '4. Kĩ năng tiết kiệm', level: 2 },
       { id: 'bao-hiem', title: '5. Quản lý bảo hiểm', level: 2 },
       { id: 'sai-lam-can-tranh', title: '6. Sai lầm cần tránh', level: 2 },
       { id: 'bai-tap', title: '7. Bài tập vận dụng', level: 2 },

@@ -14,7 +14,7 @@ export function FeaturesSection() {
       href: '/handbook#quan-ly-chi-tieu',
     },
     {
-      title: 'Kỹ năng Tiết kiệm',
+      title: 'Kĩ năng Tiết kiệm',
       description:
         'Xây dựng thói quen tiết kiệm từ sớm với nguyên tắc "trả cho bản thân trước". Tạo quỹ dự phòng và đạt được mục tiêu tài chính.',
       icon: PiggyBank,
@@ -84,7 +84,7 @@ export function FeaturesSection() {
             Nội dung chính
           </p>
           <h2 className="text-3xl font-bold text-foreground sm:text-4xl">
-            Ba kỹ năng tài chính thiết yếu
+            Ba kĩ năng tài chính thiết yếu
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
             Mỗi sinh viên cần nắm vững để làm chủ tài chính cá nhân và chuẩn bị cho tương lai.
